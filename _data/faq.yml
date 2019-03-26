@@ -1,6 +1,7 @@
 - q: How can I update the theme?
   a: "You can download the newest version of the theme at this very page and overwrite the copy on your server via FTP then.
 
+
 Or, for automatic theme updates, you can install GitHub Updater (https://github.com/afragen/github-updater) plugin which will take care of the theme updates for you."
 
 - q: What styles does the theme contain?
