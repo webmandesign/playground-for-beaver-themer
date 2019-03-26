@@ -7,6 +7,8 @@ intro_text: Blank, simple, no nonsense WordPress theme for building entire websi
 intro_image: assets/images/website-sections.png
 ---
 
+{% include section-download.html %}
+
 {% include features.html %}
 
 {% include section.html content="
