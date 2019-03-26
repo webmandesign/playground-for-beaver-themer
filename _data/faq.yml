@@ -9,22 +9,39 @@ Or, for automatic theme updates, you can install GitHub Updater (https://github.
 
 
 1. `assets/css/normalize.css` - Makes browsers render all elements more consistently and in line with modern standards. More info at https://necolas.github.io/normalize.css/
+
 2. `assets/css/base.css` - The RTL (Right To Left) languages ready stylesheet containing basic styles for:
+
   - border box sizing on all elements,
+
   - inheriting border color from parent elements,
+
   - basic typography styles, line height, default font families, and heading sizes,
+
   - vertical spacing for most block elements,
+
   - headings, blockquote, preformatted text and table elements,
+
   - form elements and buttons,
+
   - required `.screen-reader-text` accessibility class,
+
   - default WordPress alignments (please note that optional `.alignwide` and `.alignfull` classes are not styled),
+
   - image captions,
+
   - comments,
+
   - gallery,
+
   - images and other embed media,
+
   - logo,
+
   - pagination,
+
   - widgets.
+
 3. If a child theme is used, it also enqueues child theme's `style.css` file."
 
 - q: What styles are not contained in the theme?
@@ -49,15 +66,25 @@ Available hooks:
 
 
 - `pfbt_html_before` - action hook in `header.php` file,
+
 - `pfbt_body_top` - action hook in `header.php` file,
+
 - `pfbt_header_before` - action hook in `header.php` file,
+
 - `pfbt_header_after` - action hook in `header.php` file,
+
 - `pfbt_content_before` - action hook in `header.php` file,
+
 - `pfbt_content` - action hook in `index.php` file,
+
 - `pfbt_content_after` - action hook in `footer.php` file,
+
 - `pfbt_footer_before` - action hook in `footer.php` file,
+
 - `pfbt_footer_after` - action hook in `footer.php` file,
+
 - `pfbt_body_bottom` - action hook in `footer.php` file,
+
 - `pfbt_content_width` - filter hook in `includes/class-setup.php` file.
 
 
