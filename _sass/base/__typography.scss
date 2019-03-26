@@ -10,6 +10,15 @@ html {
 		Apple Color Emoji,
 		Segoe UI Emoji,
 		Segoe UI Symbol;
+
+	@media (min-width: 800px) {
+		font-size: 1.125em;
+	}
+
+	@media (min-width: 1600px) {
+		font-size: 1.25em;
+	}
+
 }
 
 pre, code, kbd, tt, var {
