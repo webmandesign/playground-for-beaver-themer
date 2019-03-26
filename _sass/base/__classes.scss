@@ -64,3 +64,27 @@
 		max-width: 580px;
 	}
 }
+
+.button {
+	padding: 1em 1.618em;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	border: 2px solid;
+	transition: box-shadow .3s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: inset 0 -2px 0;
+	}
+
+	svg {
+		display: inline-block;
+		width: 1.618em;
+		height: 1.618em;
+		margin-right: .618em;
+		vertical-align: middle;
+	}
+
+}
