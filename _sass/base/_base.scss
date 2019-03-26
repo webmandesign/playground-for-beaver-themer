@@ -38,6 +38,14 @@ body {
 
 .column {
 	$gutter: 20px;
+	flex: 1;
+	min-width: 16em;
+	max-width: 100%;
+	margin: $gutter;
+
+	&.alignright {
+		margin-left: auto;
+	}
 
 	&s {
 		display: flex;
@@ -49,16 +57,8 @@ body {
 
 	&-half {
 		width: 580px;
+		max-width: 580px;
 	}
-
-	flex: 1;
-	min-width: 16em;
-	max-width: 100%;
-	margin: $gutter;
-}
-
-.alignright {
-	float: right;
 }
 
 %hero_background {
