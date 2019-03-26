@@ -7,6 +7,8 @@ intro_text: Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus erat 
 intro_image: assets/images/website-sections.png
 ---
 
-Features:
+Lorem ipsum dolor sit amet consectetur adipiscing elit placerat euismod condimentum mollis consequat hendrerit blandit, dictum massa porta parturient lectus quisque mi scelerisque tellus netus a nisl porttitor ad, id class ut justo pellentesque nascetur purus arcu imperdiet diam quis suscipit nunc.
 
 {% include features.html %}
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit placerat euismod condimentum mollis consequat hendrerit blandit, dictum massa porta parturient lectus quisque mi scelerisque tellus netus a nisl porttitor ad, id class ut justo pellentesque nascetur purus arcu imperdiet diam quis suscipit nunc.
