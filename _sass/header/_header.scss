@@ -2,12 +2,24 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
 	min-height: 85.4vh;
-	padding: 6% 0;
+	padding: 5.387em 0;
 	background-image: url('../images/fancy-pants.jpg');
 	background-position: 50% 50%;
 	background-repeat: repeat;
 	color: #fff;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: #fcb040;
+		opacity: .5;
+	}
 
 	a {
 		color: inherit;

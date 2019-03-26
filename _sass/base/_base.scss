@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+	color: #3c0000;
 	border-color: rgba( #000, .2 );
 }
 
@@ -21,6 +22,7 @@ html {
 @import '_elements';
 
 .content-container {
+	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
 }
