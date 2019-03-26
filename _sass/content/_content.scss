@@ -1,13 +1,7 @@
 .site-content {
 	padding: 0 0 5.387em;
-
-	&-inner > * {
-		max-width: 580px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 }
 
+@import '_section';
 @import '_features';
 @import '_faq';

@@ -1,0 +1,13 @@
+.section {
+	@extend %hero_background;
+	padding: 2.618em 1em;
+	margin: 1.618em 0;
+	background: #f6f6f6;
+
+	&-inner {
+		max-width: 580px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

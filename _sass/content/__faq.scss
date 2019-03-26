@@ -5,10 +5,17 @@
 	}
 
 	&-item {
-
+		@extend %hero_background;
+		padding: 1em;
+		margin: 1em 0;
 	}
 
 	&-question {
+		font-weight: 700;
+
+		+ * {
+			margin-top: 1.618em;
+		}
 
 	}
 
