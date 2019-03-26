@@ -1,16 +1,22 @@
 .faq {
+	@extend %hero_background;
+	padding: 2.618em 1em;
+	margin: ( 1.618em / 2 ) 0;
+	background: transparent;
 
 	&-list {
-
+		max-width: 580px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	&-item {
-		@extend %hero_background;
-		padding: 1em;
-		margin: 1em 0;
+		margin: 1.618em 0;
 	}
 
 	&-question {
+		@extend %hero_background;
+		padding: 1em;
 		font-weight: 700;
 
 		+ * {

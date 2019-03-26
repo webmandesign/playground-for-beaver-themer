@@ -1,9 +1,11 @@
-<section class="faq-list">
-	<h2>Frequently Asked Questions</h2>
-{% for item in site.data.faq %}
-	<details class="faq-item">
-		<summary class="faq-question">{{ item.q }}</summary>
-		{{ item.a | markdownify }}
-	</details>
-{% endfor %}
+<section class="faq">
+	<div class="faq-list">
+		<h2>Frequently Asked Questions</h2>
+		{% for item in site.data.faq %}
+		<details class="faq-item">
+			<summary class="faq-question">{{ item.q }}</summary>
+			{{ item.a | markdownify }}
+		</details>
+		{% endfor %}
+	</div>
 </section>

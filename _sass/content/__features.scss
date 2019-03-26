@@ -5,12 +5,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: calc( 100% + #{ $gutter } );
-
-		.site-content-inner > & {
-			max-width: none;
-			margin: ( $gutter / 2 ) -#{ $gutter / 2 };
-		}
-
+		margin: ( $gutter / 2 ) -#{ $gutter / 2 };
 	}
 
 	&-item {
@@ -25,6 +20,10 @@
 			height: auto;
 			margin-bottom: 1em;
 			stroke: #7d2d0f;
+		}
+
+		h3 {
+			margin-bottom: 1rem;
 		}
 
 	}
