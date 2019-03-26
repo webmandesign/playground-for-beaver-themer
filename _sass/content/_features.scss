@@ -1,0 +1,19 @@
+.feature {
+
+	&-list {
+		display: flex;
+	}
+
+	&-item {
+		padding: 1.618em
+		margin: 1em;
+		border-width: 1px;
+		border-style: solid;
+	}
+
+	svg {
+		width: 2.618em;
+		fill: currentColor;
+	}
+
+}

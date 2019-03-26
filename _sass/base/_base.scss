@@ -1,0 +1,26 @@
+@import 'normalize';
+
+html {
+	box-sizing: border-box;
+	border-color: rgba( #000, .2 );
+}
+
+* {
+	border-color: inherit;
+
+	&,
+	&:before,
+	&:after {
+		box-sizing: inherit;
+	}
+
+}
+
+@import 'typography';
+@import 'spacing';
+@import 'elements';
+
+.content-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
