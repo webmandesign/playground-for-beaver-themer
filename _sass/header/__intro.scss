@@ -1,5 +1,14 @@
 .intro {
 
+	&-media {
+		text-align: center;
+
+		img {
+			max-width: 90%;
+		}
+
+	}
+
 	p:last-child {
 		margin-top: 2.618em;
 	}
