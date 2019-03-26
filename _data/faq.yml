@@ -45,11 +45,15 @@ Or, for automatic theme updates, you can install GitHub Updater (https://github.
 3. If a child theme is used, it also enqueues child theme's `style.css` file."
 
 - q: What styles are not contained in the theme?
-  a: "Basically, all styles above are very basic. In most cases they are sufficient enough, but in certain cases you might need to style your website elements to your needs using additional CSS code. For example, you could wish to style comments to your needs, or form elements, or links colors and behavior.
+  a: "Basically, all styles mentioned in previous answer are very basic. In most cases they are sufficient enough, but in certain cases you might need to style your website elements to your needs using additional CSS code. For example, you could wish to style comments to your needs, or form elements, or links colors and behavior.
+
+
 Please feel free to put your custom CSS code into **Appearance &rarr; Customize &rarr; Additional CSS**, or into your child theme's `style.css` file."
 
 - q: How can I set up custom fonts?
   a: "If you would like to set up custom fonts for your website, such as Google Fonts or Adobe Fonts, the simplest solution is to use a dedicated plugin: https://wordpress.org/plugins/search/fonts/
+
+
 Other than that you could use your child theme to load your custom font files into your website and use a custom CSS code to apply it on your website elements."
 
 - q: Are there any theme options?
