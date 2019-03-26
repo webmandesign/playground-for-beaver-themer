@@ -1,6 +1,9 @@
 .site-header {
-	padding-top: 12%;
-	padding-bottom: 12%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 85.4vh;
+	padding: 6% 0;
 	background-image: url('../images/fancy-pants.jpg');
 	background-position: 50% 50%;
 	background-repeat: repeat;
