@@ -8,7 +8,7 @@
 
 		.site-content-inner > & {
 			max-width: none;
-			margin: 2.618em -#{ $gutter / 2 };
+			margin: ( $gutter / 2 ) -#{ $gutter / 2 };
 		}
 
 	}
