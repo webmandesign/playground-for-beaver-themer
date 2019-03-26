@@ -19,4 +19,8 @@ Please make sure to install and activate [**Beaver Themer**](https://www.wpbeave
 
 " %}
 
+{% include section-download.html %}
+
 {% include faq.html %}
+
+{% include section-download.html %}
