@@ -1,0 +1,8 @@
+- title: Feature 1
+	content: Testing _feature 1_ content.
+	icon: boat
+	class:
+- title: Feature 2
+	content: Second _feature_ content here.
+	icon: boat
+	class: oliver

@@ -7,4 +7,4 @@ title: Playground for Beaver Themer | WordPress theme
 
 Features:
 
-{% include features/test.md %}
+{% include features.html %}
