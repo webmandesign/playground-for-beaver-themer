@@ -1,3 +1,5 @@
+@todo  UPDATE AND CONVERT TO MARKDOWN.
+
 === Playground for Beaver Themer ===
 Contributors: webmandesign
 Tags: custom-logo, custom-menu, featured-images, rtl-language-support, translation-ready
@@ -18,23 +20,23 @@ It only takes a few moments to create all the theme layouts and views using Beav
 
 Actually, the only coding you might need to do, is apply some additional CSS styles based on your needs. Such as typography or forms styles. For information on what basic styles the theme provides, please refer to FAQ section below.
 
-You can obtain Beaver Themer plugin from https://www.wpbeaverbuilder.com/beaver-themer/
-You will also need the Beaver Builder plugin, but only the paid version, as the free version is not compatible with Beaver Themer. Get Beaver Builder from https://www.wpbeaverbuilder.com/pricing/
-For instructions on how to use Beaver Themer plugin, please check the documentation at https://kb.wpbeaverbuilder.com/
+You can obtain Beaver Themer plugin from https://www.wpbeaverbuilder.com/beaver-themer/?fla=67
+You will also need the Beaver Builder plugin, but only the paid version, as the free version is not compatible with Beaver Themer. Get Beaver Builder from https://www.wpbeaverbuilder.com/pricing/?fla=67
+For instructions on how to use Beaver Themer plugin, please check the documentation at https://kb.wpbeaverbuilder.com/?fla=67
 
 
 == Frequently Asked Questions ==
 
 = Where can I find more information about the theme? =
-For more information about the theme please visit http://webmandesign.github.io/playground-for-beaver-themer
+For more information about the theme please visit https://webmandesign.github.io/playground-for-beaver-themer
 
 = How can I update the theme? =
-You can download the newest version of the theme from http://webmandesign.github.io/playground-for-beaver-themer and overwrite the copy on your server via FTP then.
+You can download the newest version of the theme from https://webmandesign.github.io/playground-for-beaver-themer and overwrite the copy on your server via FTP then.
 Or, for automatic theme updates, you can install GitHub Updater (https://github.com/afragen/github-updater) plugin which will take care of the theme updates for you.
 
 = What styles does the theme contain? =
 Stylesheets are compiled from SASS partial files from within `assets/sass` folder. The theme enqueues 3 stylesheets:
-1. `assets/css/normalize.css` - Makes browsers render all elements more consistently and in line with modern standards. More info at http://necolas.github.io/normalize.css/
+1. `assets/css/normalize.css` - Makes browsers render all elements more consistently and in line with modern standards. More info at https://necolas.github.io/normalize.css/
 2. `assets/css/base.css` - The RTL (Right To Left) languages ready stylesheet containing basic styles for:
   - border box sizing on all elements,
   - inheriting border color from parent elements,

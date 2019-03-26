@@ -20,6 +20,7 @@ class PfBT_Setup_Plugin {
 		add_action( 'pfbt_content', __CLASS__ . '::notice' );
 
 		add_filter( 'fl_theme_builder_part_hooks', __CLASS__ . '::parts' );
+		add_filter( 'fl_builder_upgrade_url', __CLASS__ . '::upgrade_url' );
 	}
 
 	/**
@@ -78,6 +79,18 @@ class PfBT_Setup_Plugin {
 			),
 
 		);
+	}
+
+	/**
+	 * Upgrade link URL.
+	 *
+	 * @since    1.0.0
+	 * @version  1.0.0
+	 *
+	 * @param  string $url
+	 */
+	public static function upgrade_url( $url ) {
+		return esc_url( add_query_arg( 'fla', '67', $url ) );
 	}
 
 }
