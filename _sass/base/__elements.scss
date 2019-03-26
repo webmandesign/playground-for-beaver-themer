@@ -33,9 +33,9 @@ pre {
 }
 
 code {
-	padding: ( 1 / .875 / 2 +em ) .382em;
+	padding: ( ( 1 / .875 - .875 ) / 2 +em ) .382em;
 	font-size: .875em;
-	background: rgba( #000,.5 );
+	background: rgba( #000, .05 );
 }
 
 table {
