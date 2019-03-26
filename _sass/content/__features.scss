@@ -1,20 +1,20 @@
 .feature {
-	$gutter: 1em;
+	$gutter: 1.618em;
 
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
 		width: calc( 100% + #{ 2 * $gutter } );
-		margin: 2.618em -#{ $gutter };
+		margin: 2.618em -#{ 2 * $gutter };
 	}
 
 	&-item {
 		@extend %hero_background;
 		flex: 1;
 		min-width: 16em;
-		padding: 2 * $gutter;
+		padding: $gutter;
 		margin: $gutter / 2;
-		box-shadow: 0 .382em 1em rgba( #000, .1 );
+		box-shadow: 0 .382em 1em rgba( #000, .2 );
 
 		svg {
 			width: 3.329em;
