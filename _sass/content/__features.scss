@@ -1,19 +1,21 @@
 .feature {
+	$gutter: 1em;
 
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
-		width: calc( 100% + 2em );
-		margin: 2.618em -1em;
+		width: calc( 100% + $gutter + $gutter );
+		margin: 2.618em - $gutter;
 	}
 
 	&-item {
 		flex: 1;
 		min-width: 16em;
-		padding: 2em;
-		margin: 1em;
+		padding: 2 * $gutter;
+		margin: $gutter;
 		border-width: 1px;
 		border-style: solid;
+		box-shadow: 0 .382em 1em rgba( #000, .1 );
 
 		svg {
 			width: 3.329em;
