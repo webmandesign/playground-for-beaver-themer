@@ -1,5 +1,10 @@
 .site-content {
 	padding: 5.387em 0;
+
+	&-inner * {
+		max-width: 580px;
+	}
+
 }
 
 @import '_features';
