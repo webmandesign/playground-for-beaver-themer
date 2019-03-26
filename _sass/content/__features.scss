@@ -5,7 +5,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: calc( 100% + #{ $gutter } );
-		margin: 2.618em -#{ $gutter };
+		margin: 2.618em -#{ $gutter / 2 };
 	}
 
 	&-item {

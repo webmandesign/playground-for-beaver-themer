@@ -44,7 +44,7 @@ body {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		width: calc( 100% + #{ $gutter } );
-		margin: 0 #{ -$gutter };
+		margin: 0 #{ -$gutter / 2 };
 	}
 
 	&-half {
