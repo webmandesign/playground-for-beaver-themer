@@ -30,14 +30,31 @@ body {
 @import '_elements';
 
 .content-container {
-	max-width: 1200px;
-	padding: 0 1.618em;
+	max-width: 1240px;
+	padding: 0 20px;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
-.column-half {
-	max-width: calc( 600px - 1em );
+.column {
+	$gutter: 20px;
+
+	&s {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: calc( 100% + #{ 2 * $gutter } );
+		margin: 0 #{ -$gutter };
+	}
+
+	&-half {
+		width: 580px;
+	}
+
+	flex: 1;
+	min-width: 16em;
+	max-width: 100%;
+	margin: $gutter;
 }
 
 .alignright {

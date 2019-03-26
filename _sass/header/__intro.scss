@@ -1,15 +1,4 @@
 .intro {
-	display: flex;
-	flex-wrap: wrap;
-	width: calc( 100% + 2em );
-	margin: 0 -1em;
-
-	&-column {
-		flex: 1;
-		min-width: 16em;
-		max-width: 50%;
-		margin: 1em;
-	}
 
 	p:last-child {
 		margin-top: 2.618em;
