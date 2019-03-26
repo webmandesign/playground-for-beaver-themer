@@ -11,16 +11,18 @@
 <body>
 
 <header class="site-header">
-	<div class="content-container intro">
-		<div class="intro-content">
-			<h1>{{ page.title }}</h1>
-			{{ page.intro_text | markdownify }}
+	<div class="content-container">
+		<div class="intro">
+			<div class="intro-content intro-column">
+				<h1>{{ page.title }}</h1>
+				{{ page.intro_text | markdownify }}
+			</div>
+			{% if page.intro_image %}
+			<div class="intro-media intro-column">
+				<img src="{{ page.intro_image }}" alt="" />
+			</div>
+			{% endif %}
 		</div>
-		{% if page.intro_image %}
-		<div class="intro-media">
-			<img src="{{ page.intro_image }}" alt="" />
-		</div>
-		{% endif %}
 	</div>
 </header>
 

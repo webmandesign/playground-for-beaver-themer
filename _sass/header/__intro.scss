@@ -1,0 +1,29 @@
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc( 100% + 2em );
+	margin: 0 -1em;
+
+	&-column {
+		flex: 1;
+		min-width: 16em;
+		max-width: 61.8%;
+		margin: 1em;
+	}
+
+}
+
+h1 {
+
+	a {
+		color: inherit;
+	}
+
+	small {
+		display: block;
+		margin-top: 1em;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+}
