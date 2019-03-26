@@ -1,8 +1,8 @@
 .faq {
 	@extend %hero_background;
 	padding: 2.618em 1em;
-	margin: ( 1.618em / 2 ) 0;
-	background: transparent;
+	margin: 2.618em 0;
+	background: #eee;
 
 	&-list {
 		max-width: 580px;
@@ -18,6 +18,7 @@
 		@extend %hero_background;
 		padding: 1em;
 		font-weight: 700;
+		cursor: pointer;
 
 		+ * {
 			margin-top: 1.618em;
