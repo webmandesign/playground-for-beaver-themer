@@ -7,7 +7,7 @@
 		width: calc( 100% + #{ $gutter } );
 		margin: 2.618em -#{ $gutter / 2 };
 
-		.site-content-inner & {
+		.site-content-inner > & {
 			max-width: none;
 		}
 
