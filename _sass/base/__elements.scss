@@ -32,6 +32,12 @@ pre {
 	padding: 1.618em;
 }
 
+code {
+	padding: ( 1 / .875em / 2 ) .382em;
+	font-size: .875em;
+	background: rgba( #000,.5 );
+}
+
 table {
 	border-collapse: collapse;
 }
