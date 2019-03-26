@@ -2,6 +2,8 @@
 
 	&-list {
 		display: flex;
+		width: calc( 100% + 2em );
+		margin: 2.618em -1em;
 	}
 
 	&-item {
@@ -12,8 +14,13 @@
 		border-style: solid;
 
 		svg {
-			width: 2.618em;
+			width: 3.329em;
+			margin-bottom: 1rem;
 			fill: currentColor;
+		}
+
+		h2 {
+			margin-bottom: 1rem;
 		}
 
 	}
