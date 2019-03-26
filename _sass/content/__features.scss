@@ -4,8 +4,8 @@
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
-		width: calc( 100% + #{ 2 * $gutter } );
-		margin: 2.618em -#{ 2 * $gutter };
+		width: calc( 100% + #{ $gutter } );
+		margin: 2.618em -#{ $gutter };
 	}
 
 	&-item {
