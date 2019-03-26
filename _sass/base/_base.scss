@@ -7,7 +7,11 @@ html {
 }
 
 body {
-	padding: 1.618em;
+
+	@media (min-width: 880px) {
+		padding: 1.618em;
+	}
+
 }
 
 * {
@@ -27,7 +31,17 @@ body {
 
 .content-container {
 	max-width: 1200px;
+	padding: 0 1.618em;
 	margin: 0 auto;
+	overflow: hidden;
+}
+
+.column-half {
+	max-width: 1000px;
+}
+
+.alignright {
+	float: right;
 }
 
 %hero_background {

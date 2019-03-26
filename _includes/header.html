@@ -13,13 +13,13 @@
 <header class="site-header">
 	<div class="content-container">
 		<div class="intro">
-			<div class="intro-content intro-column">
+			<div class="intro-content column-half">
 				<h1>{{ page.title }}</h1>
 				<p class="subtitle">{{ page.subtitle }}</p>
 				{{ page.intro_text | markdownify }}
 			</div>
 			{% if page.intro_image %}
-			<div class="intro-media intro-column">
+			<div class="intro-media column-half">
 				<img src="{{ page.intro_image }}" alt="" />
 			</div>
 			{% endif %}
