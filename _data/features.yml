@@ -1,8 +1,18 @@
-- title: Feature 1
+- title: Lightweight
   content: Testing _feature 1_ content.
-  icon: boat
-  class:
-- title: Feature 2
+  icon: feather
+- title: All layouts
   content: Second _feature_ content here.
-  icon: boat
-  class: oliver
+  icon: layout
+- title: Website in no time
+  content: Text_here.
+  icon: clock
+- title: Localized
+  content: Text_here.
+  icon: globe
+- title: Free and open
+  content: Text_here.
+  icon: github
+- title: Reknowned author
+  content: Text_here.
+  icon: award
