@@ -4,11 +4,19 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
+	<title>{{ page.html_title }}</title>
 	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
+
+<header class="site-header">
+	<div class="content-container">
+		{% include images/{{ page.intro_image }} %}
+		<h1>{{ page.title }} <small>by <a href="https://www.webmandesign.eu">WebMan Design</a></small></h1>
+		{{ page.intro_text | markdownify }}
+	</div>
+</header>
 
 <main class="site-content">
 	<div class="content-container">

@@ -1,9 +1,10 @@
 ---
 layout: home
-title: Playground for Beaver Themer | WordPress theme
+html_title: Playground for Beaver Themer | WordPress theme
+title: Playground for Beaver Themer
+intro_text:
+intro_image:
 ---
-
-# Playground for Beaver Themer
 
 Features:
 
