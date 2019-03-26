@@ -9,12 +9,11 @@
 	}
 
 	&-item {
+		@extend %hero_background;
 		flex: 1;
 		min-width: 16em;
 		padding: 2 * $gutter;
 		margin: $gutter / 2;
-		border-width: 1px;
-		border-style: solid;
 		box-shadow: 0 .382em 1em rgba( #000, .1 );
 
 		svg {

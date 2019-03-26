@@ -1,11 +1,11 @@
 .site-header {
+	@extend %hero_background;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	min-height: 85.4vh;
 	padding: 5.387em 0;
-	background-color: #fcb040;
 
 	a {
 		color: inherit;
