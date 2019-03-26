@@ -1,18 +1,35 @@
 - title: Lightweight
-  content: Testing _feature 1_ content.
+  content: Very small package with minimal PHP code and CSS styles.
   icon: feather
+
 - title: All layouts
-  content: Second _feature_ content here.
+  content: Build your website entirely with Beaver Themer. With no overhead.
   icon: layout
+
 - title: Website in no time
-  content: Text_here.
+  content: Create your website using quick and intuitive drag and drop interface.
   icon: clock
+
+- title: Minimal styles
+  content: Functional, yet minimal styles for more flexibility, easier extension and override.
+  icon: eye
+
 - title: Localized
-  content: Text_here.
+  content: Translation ready code with RTL (Right To Left) language compatible styles.
   icon: globe
+
 - title: Free and open
-  content: Text_here.
+  content: 100% GPL licensed and awailable for free download at GitHub.
   icon: github
-- title: Awarded author
-  content: Text_here.
-  icon: award
+
+- title: Child theme ready
+  content: Modify or extend the theme to your needs via a [child theme](https://github.com/webmandesign/child-theme).
+  icon: fast-forward
+
+- title: Updates
+  content: Compatible with [GitHub Updater](https://github.com/afragen/github-updater) plugin for automatic theme updates.
+  icon: chevrons-up
+
+- title: Reliable author
+  content: Built by experienced reliable WordPress themes author, [WebMan Design](https://www.webmandesign.eu).
+  icon: thumbs-up
