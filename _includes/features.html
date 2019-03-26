@@ -1,15 +1,13 @@
 <section class="feature-list">
 {% for item in site.data.features %}
 	<aside class="feature-item {{ item.class }}">
-		<header>
-			{% if item.icon %}
-			{% include svg/_ionicons_svg_md-{{ item.icon }}.svg %}
-			{% endif %}
-			<h2>{{ item.title }}</h2>
-		</header>
-		<div class="feature-content">
-			{{ item.content }}
-		</div>
+		{% if item.icon %}
+		{% include svg/_ionicons_svg_md-{{ item.icon }}.svg %}
+		{% else if item.image %}
+		{% include images/{{ item.image }} %}
+		{% endif %}
+		<h2>{{ item.title }}</h2>
+		{{ item.content | markdownify }}
 	</aside>
 {% endfor %}
 </section>
