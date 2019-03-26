@@ -20,6 +20,10 @@
 		font-weight: 700;
 		cursor: pointer;
 
+		p {
+			display: inline;
+		}
+
 		+ * {
 			margin-top: 1.618em;
 		}
