@@ -1,10 +1,11 @@
 <section class="feature-list">
+	<h2 class="screen-reader-text">Features</h2>
 {% for item in site.data.features %}
 	<aside class="feature-item {{ item.class }}">
 		{% if item.icon %}
 		{% include svg/{{ item.icon }}.svg %}
 		{% endif %}
-		<h2>{{ item.title }}</h2>
+		<h3>{{ item.title }}</h3>
 		{{ item.content | markdownify }}
 	</aside>
 {% endfor %}

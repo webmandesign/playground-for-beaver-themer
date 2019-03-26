@@ -5,10 +5,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: calc( 100% + #{ $gutter } );
-		margin: 2.618em -#{ $gutter / 2 };
 
 		.site-content-inner > & {
 			max-width: none;
+			margin: 2.618em -#{ $gutter / 2 };
 		}
 
 	}
@@ -25,11 +25,6 @@
 			height: auto;
 			margin-bottom: 1em;
 			stroke: #7d2d0f;
-		}
-
-		h2 {
-			margin-bottom: .382em;
-			font-size: 1.618em;
 		}
 
 	}
