@@ -37,7 +37,7 @@ body {
 }
 
 .column-half {
-	max-width: 1000px;
+	max-width: calc( 600px - 1em );
 }
 
 .alignright {
