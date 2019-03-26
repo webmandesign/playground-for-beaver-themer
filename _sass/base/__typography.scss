@@ -26,9 +26,12 @@ pre, code, kbd, tt, var {
 	font-size: .9375rem;
 }
 
+h1, h2, h3 {
+	font-weight: 300;
+}
+
 h1 {
 	font-size: 4.236em;
-	font-weight: 300;
 }
 
 h2 {
@@ -41,12 +44,5 @@ h1, h2 {
 
 h3 {
 	font-size: 1.618em;
-}
-
-h4 {
-	font-size: 1.272em;
-}
-
-h3, h4 {
-	line-height: 1.382;
+	font-weight: 600;
 }
