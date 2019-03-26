@@ -3,8 +3,6 @@
 	<aside class="feature-item {{ item.class }}">
 		{% if item.icon %}
 		{% include svg/_ionicons_svg_md-{{ item.icon }}.svg %}
-		{% else if item.image %}
-		{% include images/{{ item.image }} %}
 		{% endif %}
 		<h2>{{ item.title }}</h2>
 		{{ item.content | markdownify }}

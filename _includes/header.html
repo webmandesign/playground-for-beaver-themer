@@ -12,7 +12,9 @@
 
 <header class="site-header">
 	<div class="content-container">
-		{% include images/{{ page.intro_image }} %}
+		{% if page.intro_image %}
+		<img src="{{ page.intro_image }}" alt="" />
+		{% endif %}
 		<h1>{{ page.title }} <small>by <a href="https://www.webmandesign.eu">WebMan Design</a></small></h1>
 		{{ page.intro_text | markdownify }}
 	</div>

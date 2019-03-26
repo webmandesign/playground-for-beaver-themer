@@ -1,4 +1,4 @@
-@import 'normalize';
+@import '_normalize';
 
 html {
 	box-sizing: border-box;
@@ -16,9 +16,9 @@ html {
 
 }
 
-@import 'typography';
-@import 'spacing';
-@import 'elements';
+@import '_typography';
+@import '_spacing';
+@import '_elements';
 
 .content-container {
 	max-width: 1200px;
