@@ -8,7 +8,8 @@ html {
 
 body {
 	$color: #dddddd;
-	background: url("../images/graph-paper.svg");
+	background-image: url('../images/graph-paper.svg');
+	background-position: 50% 50%;
 
 	@media (min-width: 880px) {
 		padding: 1.618em;
