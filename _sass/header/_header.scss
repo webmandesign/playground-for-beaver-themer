@@ -8,6 +8,11 @@
 	background-position: 50% 50%;
 	background-repeat: repeat;
 	color: #fff;
+
+	a {
+		color: inherit;
+	}
+
 }
 
 @import '_intro';

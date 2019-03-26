@@ -11,19 +11,13 @@
 		margin: 1em;
 	}
 
+	p:last-child {
+		margin-top: 2.618em;
+	}
+
 }
 
-h1 {
-
-	a {
-		color: inherit;
-	}
-
-	small {
-		display: block;
-		margin-top: 1em;
-		font-size: 1rem;
-		font-weight: 400;
-	}
-
+.subtitle {
+	margin-top: -.382em / 1.272;
+	font-size: 1.272em;
 }
