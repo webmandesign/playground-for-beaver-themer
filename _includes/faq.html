@@ -3,7 +3,7 @@
 		<h2>Frequently Asked Questions</h2>
 		{% for item in site.data.faq %}
 		<details class="faq-item">
-			<summary class="faq-question">{{ item.q }}</summary>
+			<summary class="faq-question">{{ item.q | markdownify }}</summary>
 			{{ item.a | markdownify }}
 		</details>
 		{% endfor %}
