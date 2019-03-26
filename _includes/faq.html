@@ -1,4 +1,4 @@
-<section class="faq" id="{{ include.id }}">
+<section class="faq"{% if include.id %} id="{{ include.id }}"{% endif %}>
 	<div class="faq-list">
 		<h2>Frequently Asked Questions</h2>
 		{% for item in site.data.faq %}

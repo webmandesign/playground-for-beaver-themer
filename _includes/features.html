@@ -1,4 +1,4 @@
-<section class="feature-list" id="{{ include.id }}">
+<section class="feature-list"{% if include.id %} id="{{ include.id }}"{% endif %}>
 	<h2 class="screen-reader-text">Features</h2>
 {% for item in site.data.features %}
 	<aside class="feature-item {{ item.class }}">

@@ -1,4 +1,4 @@
-<section class="section" id="{{ include.id }}">
+<section class="section"{% if include.id %} id="{{ include.id }}"{% endif %}>
 	<div class="section-inner">
 		{{ include.content | markdownify }}
 	</div>

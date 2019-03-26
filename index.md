@@ -3,12 +3,13 @@ layout: home
 html_title: Playground for Beaver Themer | WordPress theme
 title: Playground for Beaver Themer
 subtitle: Barebone WordPress theme by <a href="https://www.webmandesign.eu">WebMan Design</a>
-intro_text: "Blank, simple, no nonsense WordPress theme for building entire website with Beaver Themer plugin. The theme is suitable for experienced users mostly, same as Beaver Themer.  
-[Features](#features) | [Description](#description) | [FAQ](#faq)"
+intro_text: "Blank, simple, no nonsense WordPress theme for building entire website with Beaver Themer plugin. The theme is suitable for experienced users mostly, same as Beaver Themer.
+
+[Features](#features) &mdash; [Description](#description) &mdash; [FAQ](#faq) &mdash; [Download](#download)"
 intro_image: assets/images/website-sections.png
 ---
 
-{% include section-download.html %}
+{% include section-download.html id="download" %}
 
 {% include features.html id="features" %}
 
