@@ -1,0 +1,15 @@
+//
+// Basic theme styles, RTL.
+//
+// @see  base.scss
+//
+
+$left: right;
+$right: left;
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+@import 'parts/_import';

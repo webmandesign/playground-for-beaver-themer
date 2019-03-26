@@ -1,0 +1,20 @@
+//
+// Basic theme styles.
+//
+// These are bare minimum styles the theme needs. Add additional styles
+// via a child theme or via WordPress' "Additional CSS" customizer field.
+// Certain styles are taken and adapted from Underscores.me starter theme.
+//
+// Using https://www.modularscale.com/?1,0.4858&em&1.618
+//
+// @package    Playground for Beaver Themer
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since    1.0.0
+// @version  1.0.0
+//
+
+$left: left;
+$right: right;
+
+@import 'parts/_import';

@@ -1,0 +1,27 @@
+// Make sure logo link wraps around logo image.
+.custom-logo-link {
+	display: inline-block;
+}
+
+.post-page-numbers {
+	display: inline-block;
+	padding: .191em .618em;
+	margin: .1em;
+	text-decoration: none;
+	border-width: 1px;
+	border-style: solid;
+	vertical-align: middle;
+
+	&:hover,
+	&.current {
+		border-color: currentColor;
+	}
+}
+
+.page-numbers {
+
+	a {
+		text-decoration: none;
+	}
+
+}
