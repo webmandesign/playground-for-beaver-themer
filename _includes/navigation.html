@@ -1,0 +1,9 @@
+<nav class="navigation" aria-label="Page navigation">
+	<ul class="navigation-list">
+		{% for item in site.data.navigation %}
+		<li class="navigation-item">
+			<a href="{{ item.url }}">{{ item.name }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>

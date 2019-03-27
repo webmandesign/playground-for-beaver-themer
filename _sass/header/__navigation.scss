@@ -1,0 +1,17 @@
+.navigation {
+
+	&-list {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	&-item {
+		display: inline-block;
+
+		&:not(:first-child)::before {
+			content: '\2014 ';
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+- name: Download
+  url: "#download"
+
+- name: Features
+  url: "#features"
+
+- name: Description
+  url: "#description"
+
+- name: FAQ
+  url: "#faq"
+
+- name: GitHub
+  url: "https://github.com/webmandesign/playground-for-beaver-themer/"
