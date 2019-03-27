@@ -31,11 +31,25 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 4.236em;
+	font-size: 2.618em;
+
+	@media (min-width: 880px) {
+		font-size: 3.329em;
+	}
+
+	@media (min-width: 1600px) {
+		font-size: 4.236em;
+	}
+
 }
 
 h2 {
-	font-size: 2.058em;
+	font-size: 1.618em;
+
+	@media (min-width: 880px) {
+		font-size: 2.058em;
+	}
+
 }
 
 h1, h2 {
@@ -43,6 +57,11 @@ h1, h2 {
 }
 
 h3 {
-	font-size: 1.618em;
+	font-size: 1.272em;
 	font-weight: 600;
+
+	@media (min-width: 880px) {
+		font-size: 1.618em;
+	}
+
 }
