@@ -22,3 +22,23 @@
 	}
 
 }
+
+.donation {
+	margin-top: 1.618em;
+	font-style: italic;
+
+	svg {
+		width: 1em;
+		height: auto;
+
+		&:first-child {
+			stroke: red;
+		}
+
+		&:last-child {
+			stroke: currentColor;
+		}
+
+	}
+
+}
