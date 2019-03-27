@@ -2,21 +2,16 @@
 
 	@media (max-width: 1160px) {
 
-		&-content {
-			width: calc( 61.8% - 20px );
-		}
-
 		&-media {
 			width: calc( 38.2% - 20px );
 		}
 
 	}
 
-	@media (min-width: 880px) {
+	@media (max-width: 880px) {
 
 		&-content {
-			min-width: 100%;
-			max-width: none;
+			min-width: calc( 100% - 40px );
 		}
 
 	}
