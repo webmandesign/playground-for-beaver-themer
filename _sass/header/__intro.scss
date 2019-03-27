@@ -12,6 +12,15 @@
 
 	}
 
+	@media (min-width: 880px) {
+
+		&-content {
+			min-width: 100%;
+			max-width: none;
+		}
+
+	}
+
 	&-media {
 		text-align: center;
 
