@@ -6,6 +6,15 @@ a:visited {
 	color: #7d2d0f;
 }
 
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration-style: wavy;
+}
+
 h1, h2, h3 {
 	clear: both;
 	word-wrap: break-word;
