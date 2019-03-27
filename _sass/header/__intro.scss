@@ -1,16 +1,8 @@
 .intro {
 
-	@media (max-width: 1160px) {
+	&-content {
 
-		&-media {
-			width: calc( 38.2% - 20px );
-		}
-
-	}
-
-	@media (max-width: 880px) {
-
-		&-content {
+		@media (max-width: 880px) {
 			min-width: calc( 100% - 40px );
 		}
 
@@ -18,6 +10,10 @@
 
 	&-media {
 		text-align: center;
+
+		@media (max-width: 1160px) {
+			width: calc( 38.2% - 20px );
+		}
 
 		img {
 			max-width: 90%;

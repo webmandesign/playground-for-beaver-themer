@@ -1,12 +1,6 @@
 p,
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-hr,
-form,
-blockquote,
-table,
-figure,
-iframe {
+h1, h2, h3,
+ul, ol {
 	margin: 0 0 1.618rem;
 
 	&:last-child {
@@ -18,4 +12,18 @@ iframe {
 ul, ol {
 	margin-left: 0;
 	padding-left: 1.618em;
+
+	> li {
+		margin-top: .382em
+	}
+
+}
+
+ol {
+
+	ul,
+	> li {
+		margin-top: 1em;
+	}
+
 }

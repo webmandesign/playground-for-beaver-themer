@@ -6,17 +6,6 @@ html {
 	border-color: rgba( #000, .1 );
 }
 
-body {
-	$color: #dddddd;
-	background-image: url('../images/graph-paper.svg');
-	background-position: 50% 50%;
-
-	@media (min-width: 880px) {
-		padding: 1.618em;
-	}
-
-}
-
 * {
 	border-color: inherit;
 
@@ -24,6 +13,17 @@ body {
 	&:before,
 	&:after {
 		box-sizing: inherit;
+	}
+
+}
+
+body {
+	$color: #dddddd;
+	background-image: url('../images/graph-paper.svg');
+	background-position: 50% 50%;
+
+	@media (min-width: 880px) {
+		padding: 1.618em;
 	}
 
 }

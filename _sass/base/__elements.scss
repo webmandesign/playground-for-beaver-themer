@@ -6,47 +6,19 @@ a:visited {
 	color: #7d2d0f;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	clear: both;
 	word-wrap: break-word;
 }
 
-dfn, cite, em, i {
+em {
 	font-style: italic;
-}
-
-blockquote {
-	padding: .618rem 0;
-	padding-left: 1.618rem;
-	margin-left: 0;
-	margin-right: 0;
-	font-size: 1.272em;
-	font-weight: 300;
-	font-style: italic;
-	border-left: 2px solid;
-}
-
-pre {
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.618em;
 }
 
 code {
 	padding: ( ( 1 / .875 - .875 ) / 2 +em ) .382em;
 	font-size: .875em;
 	background: rgba( #000, .05 );
-}
-
-table {
-	border-collapse: collapse;
-}
-
-th,
-td {
-	padding: .5em;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
 }
 
 img {

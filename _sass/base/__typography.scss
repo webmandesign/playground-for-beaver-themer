@@ -3,13 +3,13 @@ html {
 	font-family:
 		-apple-system,
 		BlinkMacSystemFont,
-		Segoe UI,
+		'Segoe UI',
 		Helvetica,
 		Arial,
 		sans-serif,
-		Apple Color Emoji,
-		Segoe UI Emoji,
-		Segoe UI Symbol;
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol';
 
 	@media (min-width: 880px) {
 		font-size: 1.125em;
@@ -21,8 +21,13 @@ html {
 
 }
 
-pre, code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+code {
+	font-family:
+		Monaco,
+		Consolas,
+		'Andale Mono',
+		'DejaVu Sans Mono',
+		monospace;
 	font-size: .9375rem;
 }
 
