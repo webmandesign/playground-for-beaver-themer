@@ -16,11 +16,11 @@ intro_image: assets/images/website-sections.png
 
 ## Description
 
-This simple WordPress theme relies solely on using **Beaver Themer** (and **Beaver Builder**) plugin to create a whole website. The theme itself does not display any WordPress website content.
+**Playground for Beaver Themer** is a simple WordPress theme and relies solely on using **Beaver Themer** (and **Beaver Builder**) plugin to create a whole website. The theme itself does not display any WordPress website content. Use the plugins to create all your layouts and views with easy to use drag & drop interface.
 
-Please make sure to install and activate [**Beaver Themer**](https://www.wpbeaverbuilder.com/beaver-themer/?fla=67) and [**Beaver Builder** (premium version)](https://www.wpbeaverbuilder.com/pricing/?fla=67) plugins before you use this WordPress theme. (For instructions on how to use these plugins, please refer to [kb.wpbeaverbuilder.com](https://kb.wpbeaverbuilder.com/).)
+Please make sure to install and activate [**Beaver Themer**](https://www.wpbeaverbuilder.com/beaver-themer/?fla=67) and [**Beaver Builder** (premium version)](https://www.wpbeaverbuilder.com/pricing/?fla=67) plugins before you use the theme. (For instructions on how to use these plugins, please refer to [kb.wpbeaverbuilder.com](https://kb.wpbeaverbuilder.com/?fla=67).)
 
-This bare-bone WordPress theme is mean as a starter for experienced, advanced WordPress users who know their way around Beaver Themer plugin, and are not afraid of coding some optional CSS styles if needed. For technical information please check the Frequently Asked Questions section below.
+**Playground for Beaver Themer** bare-bone WordPress theme is meant as a starter for experienced, advanced WordPress users who know their way around Beaver Themer plugin, and are not afraid of coding some additional CSS if needed. For technical information please check the Frequently Asked Questions section below.
 
 " %}
 
