@@ -30,15 +30,7 @@
 	svg {
 		width: 1em;
 		height: auto;
-
-		&:first-child {
-			stroke: red;
-		}
-
-		&:last-child {
-			stroke: currentColor;
-		}
-
+		stroke: currentColor;
 	}
 
 }
