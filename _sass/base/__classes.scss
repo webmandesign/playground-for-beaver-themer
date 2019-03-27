@@ -34,8 +34,8 @@
 }
 
 .content-container {
-	max-width: 1240px;
-	padding: 0 20px;
+	max-width: calc( 1200px + 2em );
+	padding: 0 1em;
 	margin: 0 auto;
 	overflow: hidden;
 }

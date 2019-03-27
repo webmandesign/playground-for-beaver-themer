@@ -4,16 +4,27 @@
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
-		width: calc( 100% + #{ $gutter } );
-		margin: #{ -$gutter / 2 };
+		width: calc( 100% + 1em );
+		margin: -.5em;
+
+		@media (min-width: 880px) {
+			width: calc( 100% + #{ $gutter } );
+			margin: #{ -$gutter / 2 };
+		}
+
 	}
 
 	&-item {
 		@extend %hero_background;
 		flex: 1;
 		min-width: 16em;
-		padding: $gutter;
-		margin: $gutter / 2;
+		padding: 1em;
+		margin: .5em;
+
+		@media (min-width: 880px) {
+			padding: $gutter;
+			margin: $gutter / 2;
+		}
 
 		svg {
 			width: 3.329em;
