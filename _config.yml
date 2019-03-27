@@ -1,2 +1,5 @@
 sass:
   style: compressed # possible values: nested expanded compact compressed
+# https://github.com/jekyll/jekyll/blob/v4.0.0.pre.alpha1/docs/_docs/configuration/default.md
+kramdown:
+  auto_ids: false

@@ -4,7 +4,7 @@
 		{{ include.content | markdownify }}
 		{% for item in site.data.faq %}
 		<details class="faq-item">
-			<summary class="faq-question">{{ item.q | markdownify }}</summary>
+			<summary class="faq-question">{{ item.q }}</summary>
 			{{ item.a | markdownify }}
 		</details>
 		{% endfor %}
