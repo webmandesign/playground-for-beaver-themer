@@ -24,6 +24,6 @@ Please make sure to install and activate [**Beaver Themer**](https://www.wpbeave
 
 " %}
 
-{% include faq.html id="faq" %}
+{% include faq.html id="faq" content="Please check the questions and answers below for technical information about the theme:" %}
 
 {% include section-download.html %}
