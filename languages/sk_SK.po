@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Playground for Beaver Themer\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2019-03-20 18:22+0100\n"
-"PO-Revision-Date: 2019-03-20 18:24+0100\n"
+"POT-Creation-Date: 2019-03-27 14:14+0100\n"
+"PO-Revision-Date: 2019-03-27 14:15+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: \n"
 "Language: sk_SK\n"
@@ -39,39 +39,39 @@ msgstr ""
 "Premenná šírky obsahu definuje vo WordPresse maximálnu povolenú šírku "
 "obrázkov, videí a oEmbed obsahu zobrazených v téme."
 
-#: includes/class-setup-plugin.php:57
+#: includes/class-setup-plugin.php:58
 msgid "HTML page"
 msgstr "Stránka HTML"
 
-#: includes/class-setup-plugin.php:59
+#: includes/class-setup-plugin.php:60
 msgid "Located just after opening `<body>` tag."
 msgstr "Nachádza sa tesne po otvorení značky `<body>`."
 
-#: includes/class-setup-plugin.php:60
+#: includes/class-setup-plugin.php:61
 msgid "Located before closing `<body>` tag, before `wp_footer()`."
 msgstr "Nachádza sa pred zatvorením značky `<body>`, pred `wp_footer()`."
 
-#: includes/class-setup-plugin.php:65
+#: includes/class-setup-plugin.php:66
 msgid "Header area"
 msgstr "Oblasť hlavičky"
 
-#: includes/class-setup-plugin.php:67
+#: includes/class-setup-plugin.php:68
 msgid "Located before Beaver Themer header template."
 msgstr "Nachádza sa pred šablónou hlavičky Beaver Themer."
 
-#: includes/class-setup-plugin.php:68
+#: includes/class-setup-plugin.php:69
 msgid "Located after Beaver Themer header template."
 msgstr "Nachádza sa za šablónou hlavičky Beaver Themer."
 
-#: includes/class-setup-plugin.php:73
+#: includes/class-setup-plugin.php:74
 msgid "Footer area"
 msgstr "Oblasť pätky"
 
-#: includes/class-setup-plugin.php:75
+#: includes/class-setup-plugin.php:76
 msgid "Located before Beaver Themer footer template."
 msgstr "Nachádza sa pred šablónou pätky Beaver Themer."
 
-#: includes/class-setup-plugin.php:76
+#: includes/class-setup-plugin.php:77
 msgid "Located after Beaver Themer footer template."
 msgstr "Nachádza sa za šablónou pätky Beaver Themer."
 
@@ -95,8 +95,8 @@ msgid "This is a blank theme for Beaver Themer plugin."
 msgstr "Toto je prázdna téma pre plugin Beaver Themer."
 
 #: templates/parts/admin/notice-welcome.php:29
-msgid "(Check theme readme file for more info.)"
-msgstr "(Prezrite si \"readme\" súbor v téme pre viac informácií.)"
+msgid "(Check the theme information page.)"
+msgstr "(Prezrite si stránku s informáciami o téme.)"
 
 #: templates/parts/admin/notice-welcome.php:32
 msgid ""
@@ -106,11 +106,33 @@ msgstr ""
 "Uistite sa, že sú pluginy Beaver Themer a Beaver Builder aktivované, aby ste "
 "mohli budovať svoju webovú stránku!"
 
-#: templates/parts/admin/notice-welcome.php:37
+#: templates/parts/admin/notice-welcome.php:38
+#, php-format
+msgctxt "%s: Website link."
+msgid ""
+"For more Beaver Themer compatible and for accessibility ready themes please "
+"visit %s."
+msgstr ""
+"Ďalšie témy kompatibilné s Beaver Themer a bezbariérové témy nájdete na "
+"stránke %s."
+
+#: templates/parts/admin/notice-welcome.php:45
+msgid "Do you like this theme?"
+msgstr "Páči sa vám táto téma?"
+
+#: templates/parts/admin/notice-welcome.php:46
+msgid "Please consider a donation."
+msgstr "Zvážte prosím podporu."
+
+#: templates/parts/admin/notice-welcome.php:47
+msgid "Thank you!"
+msgstr "Vďaka!"
+
+#: templates/parts/admin/notice-welcome.php:53
 msgid "Get Beaver Themer plugin &rarr;"
 msgstr "Získať plugin Beaver Themer &rarr;"
 
-#: templates/parts/admin/notice-welcome.php:43
+#: templates/parts/admin/notice-welcome.php:59
 msgid "Start creating theme layouts &rarr;"
 msgstr "Začať vytvárať rozloženia témy &rarr;"
 

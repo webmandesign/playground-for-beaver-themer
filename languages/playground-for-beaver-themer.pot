@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Playground for Beaver Themer\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2019-03-20 18:22+0100\n"
+"POT-Creation-Date: 2019-03-27 14:14+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: WebMan Design\n"
 "Language-Team: \n"
@@ -38,39 +38,39 @@ msgid ""
 "images, videos, and oEmbeds displayed within a theme."
 msgstr ""
 
-#: includes/class-setup-plugin.php:57
+#: includes/class-setup-plugin.php:58
 msgid "HTML page"
 msgstr ""
 
-#: includes/class-setup-plugin.php:59
+#: includes/class-setup-plugin.php:60
 msgid "Located just after opening `<body>` tag."
 msgstr ""
 
-#: includes/class-setup-plugin.php:60
+#: includes/class-setup-plugin.php:61
 msgid "Located before closing `<body>` tag, before `wp_footer()`."
 msgstr ""
 
-#: includes/class-setup-plugin.php:65
+#: includes/class-setup-plugin.php:66
 msgid "Header area"
 msgstr ""
 
-#: includes/class-setup-plugin.php:67
+#: includes/class-setup-plugin.php:68
 msgid "Located before Beaver Themer header template."
 msgstr ""
 
-#: includes/class-setup-plugin.php:68
+#: includes/class-setup-plugin.php:69
 msgid "Located after Beaver Themer header template."
 msgstr ""
 
-#: includes/class-setup-plugin.php:73
+#: includes/class-setup-plugin.php:74
 msgid "Footer area"
 msgstr ""
 
-#: includes/class-setup-plugin.php:75
+#: includes/class-setup-plugin.php:76
 msgid "Located before Beaver Themer footer template."
 msgstr ""
 
-#: includes/class-setup-plugin.php:76
+#: includes/class-setup-plugin.php:77
 msgid "Located after Beaver Themer footer template."
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid "This is a blank theme for Beaver Themer plugin."
 msgstr ""
 
 #: templates/parts/admin/notice-welcome.php:29
-msgid "(Check theme readme file for more info.)"
+msgid "(Check the theme information page.)"
 msgstr ""
 
 #: templates/parts/admin/notice-welcome.php:32
@@ -101,11 +101,31 @@ msgid ""
 "activated to build your website!"
 msgstr ""
 
-#: templates/parts/admin/notice-welcome.php:37
+#: templates/parts/admin/notice-welcome.php:38
+#, php-format
+msgctxt "%s: Website link."
+msgid ""
+"For more Beaver Themer compatible and for accessibility ready themes "
+"please visit %s."
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:45
+msgid "Do you like this theme?"
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:46
+msgid "Please consider a donation."
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:47
+msgid "Thank you!"
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:53
 msgid "Get Beaver Themer plugin &rarr;"
 msgstr ""
 
-#: templates/parts/admin/notice-welcome.php:43
+#: templates/parts/admin/notice-welcome.php:59
 msgid "Start creating theme layouts &rarr;"
 msgstr ""
 

@@ -28,7 +28,7 @@
 
 		<ol>
 			<li>
-				<a href="https://www.wpbeaverbuilder.com/pricing/?fla=67">
+				<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/pricing/' ) ); ?>">
 					<?php
 
 					printf(
@@ -43,7 +43,7 @@
 				<small><?php esc_html_e( 'Please purchase a premium version of the plugin as Beaver Themer plugin is not compatible with free, lite version of Beaver Builder.', 'playground-for-beaver-themer' ); ?></small>
 			</li>
 			<li>
-				<a href="https://www.wpbeaverbuilder.com/beaver-themer/?fla=67">
+				<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/beaver-themer/' ) ); ?>">
 					<?php
 
 					printf(

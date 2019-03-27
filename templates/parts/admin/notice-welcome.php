@@ -25,15 +25,22 @@
 	</h2>
 	<p>
 		<?php esc_html_e( 'This is a blank theme for Beaver Themer plugin.', 'playground-for-beaver-themer' ); ?>
-		<a href="<?php echo esc_url( get_theme_file_uri( 'readme.html' ) ); ?>" target="_blank"><?php
-			esc_html_e( '(Check theme readme file for more info.)', 'playground-for-beaver-themer' );
+		<a href="https://webmandesign.github.io/playground-for-beaver-themer/" target="_blank"><?php
+			esc_html_e( '(Check the theme information page.)', 'playground-for-beaver-themer' );
 		?></a>
 		<br>
 		<?php esc_html_e( 'Please make sure you have Beaver Themer and Beaver Builder plugins activated to build your website!', 'playground-for-beaver-themer' ); ?>
 	</p>
+	<p>
+		<span class="dashicons dashicons-heart" style="margin-top: -4px; color: red; vertical-align: middle;"></span>
+		<?php esc_html_e( 'Do you like this theme?', 'playground-for-beaver-themer' ); ?>
+		<a href="https://www.webmandesign.eu/contact/?utm_source=pfbt" target="_blank"><?php esc_html_e( 'Please consider a donation.', 'playground-for-beaver-themer' ); ?></a>
+		<?php esc_html_e( 'Thank you!', 'playground-for-beaver-themer' ); ?>
+		<span class="dashicons dashicons-smiley"></span>
+	</p>
 	<?php if ( ! class_exists( 'FLThemeBuilder' ) ) : ?>
 	<p class="call-to-action">
-		<a href="https://www.wpbeaverbuilder.com/beaver-themer/?fla=67" class="button button-primary button-hero">
+		<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/beaver-themer/' ) ); ?>" class="button button-primary button-hero">
 			<strong><?php esc_html_e( 'Get Beaver Themer plugin &rarr;', 'playground-for-beaver-themer' ); ?></strong>
 		</a>
 	</p>
@@ -44,6 +51,16 @@
 		</a>
 	</p>
 	<?php endif; ?>
+	<p class="footer">
+		<?php
+
+		printf(
+			esc_html_x( 'For more Beaver Themer compatible and for accessibility ready themes please visit %s.', '%s: Website link.', 'playground-for-beaver-themer' ),
+			'<a href="https://www.webmandesign.eu/?utm_source=pfbt" target="_blank">WebManDesign.eu</a>'
+		);
+
+		?>
+	</p>
 </div>
 
 <style type="text/css" media="screen">
@@ -77,5 +94,18 @@
 	.theme-welcome-notice .call-to-action {
 		margin-top: 1.618em;
 	}
+
+	.theme-welcome-notice .footer {
+		padding-top: 1.618em;
+		margin-top: 1.618em;
+		font-size: .81em;
+		font-style: italic;
+		border-top: 1px solid rgba(0,0,0,.2);
+		opacity: .75;
+	}
+
+		.theme-welcome-notice .footer:hover {
+			opacity: 1;
+		}
 
 </style>
