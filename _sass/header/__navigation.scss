@@ -7,6 +7,7 @@
 
 	&-item {
 		display: inline-block;
+		margin: 0;
 
 		&:not(:first-child)::before {
 			content: '\2014 ';
