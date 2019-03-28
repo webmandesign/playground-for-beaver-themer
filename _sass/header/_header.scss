@@ -13,9 +13,18 @@
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 	min-height: 75vh;
 	padding: 5.387em 0;
+
+	.content-container {
+		flex: 1 1 auto;
+	}
+
 }
 
 @import '_intro';
