@@ -12,6 +12,7 @@
 
 	&-item {
 		margin: 1.618em 0 0;
+		list-style: none; // For browsers that do not support <details> and <summary> HTML tags.
 	}
 
 	&-question {

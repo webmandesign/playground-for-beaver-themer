@@ -1,6 +1,9 @@
 - q: Do I really need to use Beaver Themer plugin?
   a: "Yes. The theme is basically useless without the Beaver Themer (and Beaver Builder) plugin. It was built specifically for use with these plugins. You can purchase both at [WPBeaverBuilder.com](https://www.wpbeaverbuilder.com/?fla=67)."
 
+- q: How to use Beaver Themer plugin?
+  a: "Please check the official [plugin knowledge base](https://kb.wpbeaverbuilder.com/collection/397-beaver-themer). Also, folks at WPBeginner released a comprehensive [tutorial article on how to use Beaver Themer](https://www.wpbeginner.com/wp-themes/how-to-easily-create-a-custom-wordpress-theme/) plugin."
+
 - q: How can I update the theme?
   a: "You can [download](#download) the newest version of the theme at this very page and overwrite the copy on your server via FTP then.
 
@@ -60,11 +63,23 @@ Please feel free to put your custom CSS code into **Appearance &rarr; Customize 
 
 Other than that you could use your child theme to load your custom font files into your website and use a custom CSS code to apply it on your website elements."
 
+- q: How to use navigational menus?
+  a: "The theme allows you to [create any number of menus](https://codex.wordpress.org/WordPress_Menu_User_Guide). However, it does not display any of them on front-end of your website. Please use Beaver Builder's [Menu module](https://kb.wpbeaverbuilder.com/article/65-menu-module-overview) to display your menus wherever needed."
+
+- q: How to use sidebars (widgetized areas)?
+  a: "Theme registers a single [widgetized area called 'Sidebar'](https://codex.wordpress.org/WordPress_Widgets). However, this sidebar is not displayed on the front-end of your website by the theme. Please use Beaver Builder's [Sidebar module](https://kb.wpbeaverbuilder.com/article/71-sidebar-module-overview) to display it wherever needed.
+
+
+Surely, you can use a [sidebar management plugin](https://wordpress.org/plugins/search/sidebars/) to create other widgetized areas if needed."
+
 - q: How can I set <code>$content_width</code> global theme variable?
   a: "You can do this directly in theme options at **Appearance &rarr; Customize &rarr; Theme Options &rarr; Layout &rarr; Content width**.
 
 
 Or you can define the `PFBT_CONTENT_WIDTH` PHP constant in your child theme's `functions.php` file."
+
+- q: How to translate the theme to your language?
+  a: "The theme is fully localization ready. If it is not yet localized, translated into your language, you can translate its texts yourself according the instructions in [`languages/readme.md` file](https://github.com/webmandesign/playground-for-beaver-themer/blob/master/languages/readme.md)."
 
 - q: What hooks are available in the theme?
   a: "The theme contains several helpful action and filter hooks you can use to hook your child theme functionality to or modify the theme variables. Relevant action hooks are also available for use in Beaver Themer parts.

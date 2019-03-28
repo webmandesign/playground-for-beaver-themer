@@ -2,8 +2,13 @@
 	$gutter: 1.618em;
 
 	&-list {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
 		width: calc( 100% + 1em );
 		margin: -.5em;
 
@@ -16,7 +21,10 @@
 
 	&-item {
 		@extend %hero_background;
-		flex: 1;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
 		min-width: 16em;
 		padding: 1em;
 		margin: .5em;
@@ -28,7 +36,7 @@
 
 		svg {
 			width: 4.236em;
-			height: auto;
+			height: 4.236em;
 			margin-bottom: .618em;
 			stroke: #7d2d0f;
 		}
