@@ -13,7 +13,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.0
+ * @version  1.0.1
  */
 
 get_header();
@@ -27,6 +27,7 @@ get_header();
 		 * this content is being displayed instead.
 		 *
 		 * `PfBT_Setup_Plugin::notice()` is hooked here.
+		 * `PfBT_Setup_Plugin::content()` is hooked here.
 		 * Not included in Beaver Themer part hooks, no need to.
 		 *
 		 * @since  1.0.0
