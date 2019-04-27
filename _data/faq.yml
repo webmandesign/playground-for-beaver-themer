@@ -87,28 +87,35 @@ Or you can define the `PFBT_CONTENT_WIDTH` PHP constant in your child theme's `f
 
 Available hooks:
 
+- In `header.php` file:
 
-- `pfbt_html_before` - action hook in `header.php` file,
+  - `pfbt_html_before` action hook,
 
-- `pfbt_body_top` - action hook in `header.php` file,
+  - `pfbt_body_top` action hook,
 
-- `pfbt_header_before` - action hook in `header.php` file,
+  - `pfbt_header_before` action hook,
 
-- `pfbt_header_after` - action hook in `header.php` file,
+  - `pfbt_header_after` action hook,
 
-- `pfbt_content_before` - action hook in `header.php` file,
+  - `pfbt_content_before` action hook.
 
-- `pfbt_content` - action hook in `index.php` file,
+- In `index.php` file:
 
-- `pfbt_content_after` - action hook in `footer.php` file,
+  - `pfbt_content` action hook.
 
-- `pfbt_footer_before` - action hook in `footer.php` file,
+- In `footer.php` file:
 
-- `pfbt_footer_after` - action hook in `footer.php` file,
+  - `pfbt_content_after` action hook,
 
-- `pfbt_body_bottom` - action hook in `footer.php` file,
+  - `pfbt_footer_before` action hook,
 
-- `pfbt_content_width` - filter hook in `includes/class-setup.php` file.
+  - `pfbt_footer_after` action hook,
+
+  - `pfbt_body_bottom` action hook.
+
+- In `includes/class-setup.php` file:
+
+  - `pfbt_content_width` filter hook.
 
 
 Please check the file containing the hook for more info."
