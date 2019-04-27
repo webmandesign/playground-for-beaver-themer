@@ -13,26 +13,24 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.1
+ * @version  1.0.2
  */
 
 get_header();
 
-	if ( have_posts() ) {
-		/**
-		 * Displays an `index.php` template content if we `have_posts()`.
-		 *
-		 * This usually gets overridden by Beaver Themer layouts.
-		 * If the appropriate Beaver Themer layout does not exist,
-		 * this content is being displayed instead.
-		 *
-		 * `PfBT_Setup_Plugin::notice()` is hooked here.
-		 * `PfBT_Setup_Plugin::content()` is hooked here.
-		 * Not included in Beaver Themer part hooks, no need to.
-		 *
-		 * @since  1.0.0
-		 */
-		do_action( 'pfbt_content' );
-	}
+	/**
+	 * Displays the content.
+	 *
+	 * This usually gets overridden by Beaver Themer layout.
+	 * If the appropriate Beaver Themer layout does not exist,
+	 * the content hooked onto `pfbt_content` action is being
+	 * displayed instead.
+	 *
+	 * `PfBT_Setup_Plugin::content()` is hooked here.
+	 * Not included in Beaver Themer part hooks, no need to.
+	 *
+	 * @since  1.0.0
+	 */
+	do_action( 'pfbt_content' );
 
 get_footer();

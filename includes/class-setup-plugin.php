@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.1
+ * @version  1.0.2
  */
 class PfBT_Setup_Plugin {
 
@@ -14,10 +14,9 @@ class PfBT_Setup_Plugin {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.1
+	 * @version  1.0.2
 	 */
 	public static function init() {
-		add_action( 'pfbt_content', __CLASS__ . '::notice' );
 		add_action( 'pfbt_content', __CLASS__ . '::content' );
 
 		add_filter( 'fl_theme_builder_part_hooks', __CLASS__ . '::parts' );
@@ -28,7 +27,7 @@ class PfBT_Setup_Plugin {
 	 * Is builder active or enabled?
 	 *
 	 * @since    1.0.1
-	 * @version  1.0.1
+	 * @version  1.0.2
 	 */
 	public static function is_builder() {
 		if (
@@ -38,41 +37,25 @@ class PfBT_Setup_Plugin {
 			return false;
 		}
 
-		return FLBuilderModel::is_builder_active() || FLBuilderModel::is_builder_enabled();
+		return have_posts() && ( FLBuilderModel::is_builder_active() || FLBuilderModel::is_builder_enabled() );
 	}
 
 	/**
-	 * Front-end notice.
-	 *
-	 * This is displayed only when WordPress found posts
-	 * but there is no Beaver Themer layout to display.
+	 * Content.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.1
-	 */
-	public static function notice() {
-		if ( ! class_exists( 'FLThemeBuilder' ) ) {
-			// Beaver Themer not active?
-			get_template_part( 'templates/parts/content/content', 'beaver-themer' );
-		} else if ( ! self::is_builder() ) {
-			// Looks like we have no Themer Layouts...
-			get_template_part( 'templates/parts/content/content', 'themer-layouts' );
-		}
-	}
-
-	/**
-	 * Display page builder layout if it exists.
-	 *
-	 * Allows displaying custom page builder layout if it exists,
-	 * such as pages built with Beaver Builder. This will bypass
-	 * the Beaver Themer layout.
-	 *
-	 * @since    1.0.1
-	 * @version  1.0.1
+	 * @version  1.0.2
 	 */
 	public static function content() {
-		if ( self::is_builder() ) {
+		if ( ! class_exists( 'FLThemeBuilder' ) ) {
+			// Beaver Themer not active? Display notice.
+			get_template_part( 'templates/parts/content/content', 'beaver-themer' );
+		} else if ( self::is_builder() ) {
+			// Display Beaver Builder page builder layout if it exists.
 			get_template_part( 'templates/parts/content/content', get_post_type() );
+		} else {
+			// Looks like we have no Themer Layouts: display notice.
+			get_template_part( 'templates/parts/content/content', 'themer-layouts' );
 		}
 	}
 
@@ -116,12 +99,20 @@ class PfBT_Setup_Plugin {
 	 * Upgrade link URL.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.0
+	 * @version  1.0.2
 	 *
 	 * @param  string $url
 	 */
 	public static function url( $url ) {
-		return esc_url( add_query_arg( 'fla', '67', $url ) );
+		return esc_url(
+			add_query_arg(
+				array(
+					'fla'        => '67',
+					'utm_source' => 'pfbt',
+				),
+				$url
+			)
+		);
 	}
 
 }
