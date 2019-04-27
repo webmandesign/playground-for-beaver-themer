@@ -85,37 +85,37 @@ Or you can define the `PFBT_CONTENT_WIDTH` PHP constant in your child theme's `f
   a: "The theme contains several helpful action and filter hooks you can use to hook your child theme functionality to or modify the theme variables. Relevant action hooks are also available for use in Beaver Themer parts.
 
 
-Available hooks:
+**Available hooks**:
 
-- In `header.php` file:
+In `header.php` file:
 
-  - `pfbt_html_before` action hook,
+- `pfbt_html_before` action hook,
 
-  - `pfbt_body_top` action hook,
+- `pfbt_body_top` action hook,
 
-  - `pfbt_header_before` action hook,
+- `pfbt_header_before` action hook,
 
-  - `pfbt_header_after` action hook,
+- `pfbt_header_after` action hook,
 
-  - `pfbt_content_before` action hook.
+- `pfbt_content_before` action hook.
 
-- In `index.php` file:
+In `index.php` file:
 
-  - `pfbt_content` action hook.
+- `pfbt_content` action hook.
 
-- In `footer.php` file:
+In `footer.php` file:
 
-  - `pfbt_content_after` action hook,
+- `pfbt_content_after` action hook,
 
-  - `pfbt_footer_before` action hook,
+- `pfbt_footer_before` action hook,
 
-  - `pfbt_footer_after` action hook,
+- `pfbt_footer_after` action hook,
 
-  - `pfbt_body_bottom` action hook.
+- `pfbt_body_bottom` action hook.
 
-- In `includes/class-setup.php` file:
+In `includes/class-setup.php` file:
 
-  - `pfbt_content_width` filter hook.
+- `pfbt_content_width` filter hook.
 
 
 Please check the file containing the hook for more info."
