@@ -15,7 +15,7 @@
   icon: eye
 
 - title: Localized
-  content: Translation ready code with RTL (Right To Left) language compatible styles.
+  content: Translation ready code with <abbr title="Right to left">RTL</abbr> language compatible styles.
   icon: globe
 
 - title: Free and open

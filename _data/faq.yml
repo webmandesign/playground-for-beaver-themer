@@ -16,7 +16,7 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
 
 1. `assets/css/normalize.css` - Makes browsers [render all elements more consistently](https://necolas.github.io/normalize.css/) and in line with modern standards.<br>
 
-2. `assets/css/base.css` - The RTL (Right To Left) languages ready stylesheet containing basic styles for:
+2. `assets/css/base.css` - The <abbr title=\"Right to left\">RTL</abbr> languages ready stylesheet containing basic styles for:
 
   - border box sizing on all elements,
 
