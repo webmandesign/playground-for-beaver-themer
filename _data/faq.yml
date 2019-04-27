@@ -79,7 +79,7 @@ Surely, you can use a [sidebar management plugin](https://wordpress.org/plugins/
 Or you can define the `PFBT_CONTENT_WIDTH` PHP constant in your child theme's `functions.php` file."
 
 - q: How to translate the theme to your language?
-  a: "The theme is fully localization ready. If it is not yet localized, translated into your language, you can translate its texts yourself according the instructions in [`languages/readme.md` file](https://github.com/webmandesign/playground-for-beaver-themer/blob/master/languages/readme.md)."
+  a: "The theme is fully localization ready. If it is not yet localized, translated into your language, you can translate its texts yourself according to the instructions in [`languages/readme.md` file](https://github.com/webmandesign/playground-for-beaver-themer/blob/master/languages/readme.md)."
 
 - q: What hooks are available in the theme?
   a: "The theme contains several helpful action and filter hooks you can use to hook your child theme functionality to or modify the theme variables. Relevant action hooks are also available for use in Beaver Themer parts.
