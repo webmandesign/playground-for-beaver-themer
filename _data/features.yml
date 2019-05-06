@@ -1,35 +1,35 @@
-- title: Lightweight
-  content: Very small package with minimal PHP code and CSS styles.
-  icon: feather
-
-- title: All layouts
-  content: Build your website entirely with Beaver Themer. With no overhead.
+- title: Drag&nbsp;&&nbsp;drop layouts
+  content: Don't code it, Beaver Themer it! With no overhead of a standard theme.
   icon: layout
 
 - title: Website in no time
-  content: Create your website using quick and intuitive drag & drop interface.
-  icon: clock
+  content: Create a beautiful flexible website you imagined fast and easy.
+  icon: zap
+
+- title: Lightweight
+  content: A very small theme package with minimal PHP and CSS code.
+  icon: gift
 
 - title: Minimal styles
-  content: Functional, yet minimal styles for more flexibility, easier extension and override.
-  icon: eye
+  content: Functional, yet minimal CSS styles for more flexibility, extension and override.
+  icon: feather
 
-- title: Localized
-  content: Translation ready code with <abbr title="Right to left">RTL</abbr> language compatible styles.
+- title: International
+  content: Translation ready, compatible with <abbr title="Right to left">RTL</abbr> languages. ([How to translate?](https://support.webmandesign.eu/localization/?utm_source=pfbt-github))
   icon: globe
 
 - title: Free and open
-  content: 100% GPL licensed and awailable for free [at GitHub](https://github.com/webmandesign/playground-for-beaver-themer/).
-  icon: github
+  content: Open code, 100% GPL licensed and awailable **for free** [at GitHub](https://github.com/webmandesign/playground-for-beaver-themer/).
+  icon: book-open
 
 - title: Child theme ready
   content: Modify or extend the theme to your needs via a [child theme](https://github.com/webmandesign/child-theme).
-  icon: fast-forward
+  icon: layers
 
-- title: Updates
+- title: Auto updates
   content: Compatible with [GitHub Updater](https://github.com/afragen/github-updater) plugin for automatic theme updates.
-  icon: chevrons-up
+  icon: arrow-up-circle
 
 - title: Reliable author
   content: Built by experienced reliable WordPress themes author, [WebMan Design](https://www.webmandesign.eu?utm_source=pfbt-github).
-  icon: thumbs-up
+  icon: smile
