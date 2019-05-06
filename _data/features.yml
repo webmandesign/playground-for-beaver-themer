@@ -18,10 +18,6 @@
   content: Translation ready, compatible with <abbr title="Right to left">RTL</abbr> languages. ([How to translate?](https://support.webmandesign.eu/localization/?utm_source=pfbt-github))
   icon: globe
 
-- title: Free and open
-  content: Open code, 100% GPL licensed and awailable **for free** [at GitHub](https://github.com/webmandesign/playground-for-beaver-themer/).
-  icon: book-open
-
 - title: Child theme ready
   content: Modify or extend the theme to your needs via a [child theme](https://github.com/webmandesign/child-theme).
   icon: layers
@@ -29,6 +25,10 @@
 - title: Auto updates
   content: Compatible with [GitHub Updater](https://github.com/afragen/github-updater) plugin for automatic theme updates.
   icon: arrow-up-circle
+
+- title: Free and open
+  content: Open code, 100% GPL licensed and awailable **for free** [at GitHub](https://github.com/webmandesign/playground-for-beaver-themer/).
+  icon: book-open
 
 - title: Reliable author
   content: Built by experienced reliable WordPress themes author, [WebMan Design](https://www.webmandesign.eu?utm_source=pfbt-github).
