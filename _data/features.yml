@@ -10,13 +10,13 @@
   content: A very small theme package with minimal PHP and CSS code.
   icon: gift
 
-- title: Minimal styles
-  content: Functional, yet minimal CSS styles for more flexibility, extension and override.
-  icon: feather
-
 - title: International
   content: Translation ready, compatible with <abbr title="Right to left">RTL</abbr> languages. ([How to translate?](https://support.webmandesign.eu/localization/?utm_source=pfbt-github))
   icon: globe
+
+- title: Minimal styles
+  content: Functional, yet minimal CSS styles for more flexibility, extension and override.
+  icon: feather
 
 - title: Child theme ready
   content: Modify or extend the theme to your needs via a [child theme](https://github.com/webmandesign/child-theme).
