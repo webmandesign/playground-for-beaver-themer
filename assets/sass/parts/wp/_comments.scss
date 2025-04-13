@@ -1,24 +1,23 @@
 /*! wp/_comments.scss */
 
 .comment {
-	$avatar_size: 3.329em; // In em.
-
-	margin: 2.618em 0;
+	$avatar_size: 3em;
 
 	&list {
 		clear: both;
 
-		&, .children {
+		&,
+		.children {
 			padding: 0;
-			margin: 2.618em 0;
+			margin: calc( 2em * _var( ratio, base ) ) 0;
 			list-style: none;
 		}
 
 		.children {
-			margin-inline-start: .618em;
+			margin-inline-start: calc( 1em * _var( ratio, maj ) );
 
 			@include media( map_get( $breakpoint, 's' ) ) {
-				margin-inline-start: 1.618em;
+				margin-inline-start: calc( 1em * _var( ratio, base ) );
 			}
 		}
 	}
@@ -28,7 +27,7 @@
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
 			padding-inline-start: $avatar_size + 1;
-			padding-block-start: math.div( $avatar_size - 1.618, 2 );
+			padding-block-start: 1em;
 			// See also .pingback styles below. They reset these styles.
 		}
 
@@ -39,7 +38,7 @@
 
 	.avatar {
 		width: $avatar_size;
-		margin-inline-end: .382em;
+		margin-inline-end: calc( 1em * _var( ratio, min ) );
 		border-radius: 10em;
 		vertical-align: bottom;
 
@@ -51,6 +50,7 @@
 	}
 
 	&-content {
+		#{ _var_name( '', 'spacing' ) }: 1rem;
 		margin: 1em 0;
 
 		a {
@@ -59,7 +59,7 @@
 	}
 
 	&-respond {
-		margin-block-start: 2.618em;
+		margin-block-start: calc( 2em * _var( ratio, base ) );
 
 		textarea,
 		[type="text"],
@@ -70,18 +70,18 @@
 
 		label:first-child {
 			display: block;
-			margin-block-end: .382em;
+			margin-block-end: calc( 1em * _var( ratio, min ) );
 		}
 
 		textarea:invalid {
-			max-height: 2 * 1.618em + 2 * .618; // 2x line height + vertical textarea padding.
+			max-height: calc( 2em * ( _var( ratio, maj ) + _var( line-height, global ) ) ); // 2x line height + vertical textarea padding.
 			overflow-y: hidden;
 		}
 	}
 
 	&-reply-title {
 		margin-block-end: 0;
-		font-size: 1.272em;
+		font-size: calc( 1em * _var( typography, ratio ) );
 	}
 }
 
@@ -96,5 +96,6 @@
 }
 
 .fl-module-fl-comments .navigation {
+	margin: calc( 2em * _var( ratio, base ) ) 0;
 	overflow: hidden;
 }

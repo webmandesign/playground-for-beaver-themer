@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Playground for Beaver Themer\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2025-04-12 17:52+0200\n"
+"POT-Creation-Date: 2025-04-13 19:56+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: WebMan Design\n"
 "Language-Team: \n"
@@ -19,19 +19,31 @@ msgstr ""
 "__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/class-customize.php:49
+#: includes/class-customize.php:88
 msgid "Theme Options"
 msgstr ""
 
-#: includes/class-customize.php:58
+#: includes/class-customize.php:111
+msgid "Colors"
+msgstr ""
+
+#: includes/class-customize.php:128
+msgid "Button background color"
+msgstr ""
+
+#: includes/class-customize.php:146
+msgid "Button text color"
+msgstr ""
+
+#: includes/class-customize.php:171
 msgid "Layout"
 msgstr ""
 
-#: includes/class-customize.php:75
+#: includes/class-customize.php:187
 msgid "Content width"
 msgstr ""
 
-#: includes/class-customize.php:76
+#: includes/class-customize.php:188
 msgid ""
 "WordPress content width variable defines the maximum allowed width for "
 "images, videos, and oEmbeds displayed within a theme."
@@ -73,11 +85,11 @@ msgstr ""
 msgid "Located after Beaver Themer footer template."
 msgstr ""
 
-#: includes/class-setup.php:171
+#: includes/class-setup.php:189
 msgid "Sidebar"
 msgstr ""
 
-#: includes/class-setup.php:172
+#: includes/class-setup.php:190
 msgid "Theme does not display the sidebar, use Beaver Themer to display."
 msgstr ""
 
@@ -120,45 +132,45 @@ msgstr ""
 msgid "Start creating theme layouts &rarr;"
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:20
+#: templates/parts/content/content-beaver-themer.php:19
 msgid "Beaver Themer is required"
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:26
+#: templates/parts/content/content-beaver-themer.php:22
 msgid "It seems the Beaver Themer plugin is not activate on your website."
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:27
+#: templates/parts/content/content-beaver-themer.php:23
 msgid ""
 "Please note that this theme requires Beaver Themer and Beaver Builder "
 "plugin to work properly so you can build your site layouts."
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:31
+#: templates/parts/content/content-beaver-themer.php:27
 msgid "You can obtain these plugins following the links below:"
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:41
-#: templates/parts/content/content-beaver-themer.php:55
+#: templates/parts/content/content-beaver-themer.php:37
+#: templates/parts/content/content-beaver-themer.php:51
 #, php-format
 msgid "Get %s plugin &rarr;"
 msgstr ""
 
-#: templates/parts/content/content-beaver-themer.php:47
+#: templates/parts/content/content-beaver-themer.php:43
 msgid ""
 "Please purchase a premium version of the plugin as Beaver Themer plugin is "
 "not compatible with free, lite version of Beaver Builder."
 msgstr ""
 
-#: templates/parts/content/content-themer-layouts.php:20
+#: templates/parts/content/content-themer-layouts.php:19
 msgid "No Themer Layout for this content"
 msgstr ""
 
-#: templates/parts/content/content-themer-layouts.php:25
+#: templates/parts/content/content-themer-layouts.php:22
 msgid "It looks like there is no Themer Layout for this content."
 msgstr ""
 
-#: templates/parts/content/content-themer-layouts.php:27
+#: templates/parts/content/content-themer-layouts.php:24
 msgctxt "Themer Layout"
 msgid "Create it now &rarr;"
 msgstr ""

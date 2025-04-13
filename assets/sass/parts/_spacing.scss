@@ -5,8 +5,7 @@
 	%block_margin {
 
 		:root :where( & ) {
-			--spacing: #{ _var( spacing, global ) };
-			margin-block-start: var(--spacing);
+			margin-block-start: _var( spacing );
 			margin-block-end: 0;
 		}
 
@@ -29,6 +28,7 @@
 	details,
 	pre,
 	.gallery,
+	.commentlist .comment,
 	.sidebar .widget,
 	.fl-module-sidebar .widget {
 		@extend %block_margin;
@@ -37,6 +37,6 @@
 	h1, h2, h3, h4, h5, h6 {
 
 		:root :where( & ) {
-			--spacing: #{ _var( spacing, heading ) };
+			#{ _var_name( spacing ) }: #{ _var( spacing, heading ) };
 		}
 	}

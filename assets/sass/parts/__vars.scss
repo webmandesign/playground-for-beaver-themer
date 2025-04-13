@@ -26,9 +26,16 @@ $vars: (
 	),
 
 	button: (
+		border-color: transparent,
+		border-radius: .25em,
 		border-width: 2px,
-		padding: calc( 1em * _var( ratio, maj ) - _var( border, width ) ),
+		font-size: .9em,
+		font-weight: 600,
+		padding: 1em 2em,
 		text-transform: uppercase,
+		// @see  PfBT_Customize::styles()
+		background: var(--customize--color--button-background),
+		color: var(--customize--color--button-text),
 	),
 
 	border: (
@@ -82,4 +89,7 @@ $vars: (
 			#{ _var_name( $group, $attribute ) }: #{ $value };
 		}
 	}
+
+	#{ _var_name( spacing ) }: #{ _var( spacing, global ) };
+	#{ _var_name( heading, font-size ) }: 1;
 }

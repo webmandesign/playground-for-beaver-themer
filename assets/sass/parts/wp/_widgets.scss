@@ -6,7 +6,7 @@
 	.widget {
 
 		:root :where( & ) {
-			--spacing: #{ calc(
+			#{ _var_name( '', 'spacing' ) }: #{ calc(
 				1em
 				* pow(
 					_var( ratio, base ),

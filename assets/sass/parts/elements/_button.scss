@@ -1,0 +1,25 @@
+/*! elements/_button.scss */
+
+%button {
+	padding: _var( button, padding );
+	font-size: _var( button, font-size );
+	font-weight: _var( button, font-weight );
+	text-transform: _var( button, text-transform );
+	background: _var( button, background );
+	color: _var( button, color );
+	border-width: _var( button, border-width );
+	border-color: _var( button, border-color );
+	border-radius: _var( button, border-radius );
+	cursor: pointer;
+}
+
+.button,
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+
+	:root :where( & ) {
+		@extend %button;
+	}
+}

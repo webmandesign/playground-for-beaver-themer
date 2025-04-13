@@ -1,9 +1,10 @@
 # Playground for Beaver Themer Changelog
 
-## 1.1.0, 20250412
+## 1.1.0, 20250414
 
 ### Added
 - CSS variables
+- Default block styles support
 
 ### Updated
 - Improving code
@@ -31,6 +32,7 @@
 	templates\parts\content\content-themer-layouts.php
 	templates\parts\content\content.php
 	templates\parts\header\head.php
+	templates\parts\style\style-notice.php
 
 
 ## 1.0.2

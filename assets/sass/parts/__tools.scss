@@ -1,15 +1,23 @@
 // Functions:
 
 	// Returns CSS variable name only.
-	@function _var_name( $group: '', $attribute ) {
-		@if '' != $group {
-			$attribute: $group + '--' + $attribute;
+	@function _var_name( $group: '', $attribute: '' ) {
+
+		$var_name: $group;
+
+		@if '' != $attribute {
+			@if '' != $var_name {
+				$var_name: $var_name + '--' + $attribute;
+			} @else {
+				$var_name: $attribute;
+			}
 		}
-		@return --pfbt--#{ $attribute };
+
+		@return --pfbt--#{ $var_name };
 	} // /_var_name
 
 	// Returns actual CSS variable.
-	@function _var( $group: '', $attribute, $default: null ) {
+	@function _var( $group: '', $attribute: '', $default: null ) {
 		@if null == $default {
 			@return var( _var_name( $group, $attribute ) );
 		} @else {
