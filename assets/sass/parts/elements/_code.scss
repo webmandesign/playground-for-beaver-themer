@@ -1,0 +1,16 @@
+/*! elements/_code.scss */
+
+pre,
+code,
+kbd,
+tt,
+var {
+	@extend %typography_small;
+	font-family: _var( font-family, monospace );
+}
+
+pre {
+	max-width: 100%;
+	padding: calc( 1em * _var( ratio, base ) );
+	overflow: auto;
+}

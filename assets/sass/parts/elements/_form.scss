@@ -1,0 +1,124 @@
+/*! elements/_form.scss */
+
+// Containers.
+
+	form {
+		max-width: 100%;
+	}
+
+	fieldset {
+		padding: 0;
+		margin: 0;
+		border-width: 0;
+	}
+
+// Fields.
+
+	button:where( :not( .components-button, [class*="wc-"] ) ),
+	input,
+	select,
+	textarea {
+		max-width: 100%;
+		padding: calc( 1em * _var( ratio, maj ) );
+		font-size: 1em;
+		font-family: inherit;
+		line-height: inherit;
+		text-transform: inherit;
+		letter-spacing: inherit;
+		background: transparent;
+		color: inherit;
+		border-width: _var( border, width );
+		border-style: solid;
+		border-radius: _var( border, radius );
+		vertical-align: baseline;
+
+		&.disabled {
+			@extend %field_disabled;
+		}
+
+		&.fullwidth {
+			width: 100%;
+		}
+	}
+
+		input,
+		select,
+		textarea {
+
+			&:focus {
+				border-color: currentColor;
+			}
+		}
+
+	textarea,
+	select[multiple],
+	select[size] {
+		height: auto;
+		line-height: inherit;
+	}
+
+	textarea {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		vertical-align: top;
+		overflow-y: auto;
+		resize: vertical;
+	}
+
+// Select.
+
+	option {
+		background: #fff !important;
+		color: #444 !important;
+
+		@media (prefers-color-scheme: dark) {
+			background: #111 !important;
+			color: #ddd !important;
+		}
+	}
+
+// Label.
+
+	label {
+
+		&[for] {
+			cursor: pointer;
+		}
+
+		[type="checkbox"] + & {
+			margin-inline-start: .5em;
+		}
+	}
+
+// Buttons.
+
+	button,
+	[type="button"],
+	[type="reset"],
+	[type="submit"] {
+		padding: _var( button, padding );
+		text-transform: _var( button, text-transform );
+		border-width: _var( button, border-width );
+		cursor: pointer;
+	}
+
+// Others.
+
+	:disabled,
+	[disabled],
+	[aria-disabled="true"] {
+		@extend %field_disabled;
+	}
+
+	%field_disabled {
+		cursor: not-allowed;
+		pointer-events: none;
+		opacity: .5;
+	}
+
+	::placeholder {
+		font-weight: 300;
+		line-height: normal;
+		opacity: .75;
+		color: inherit;
+	}

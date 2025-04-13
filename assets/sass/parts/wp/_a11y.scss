@@ -1,0 +1,30 @@
+/*! wp/_a11y.scss */
+
+// Text meant only for screen readers.
+
+	.screen-reader-text {
+		@include screen_reader( 'hide' );
+		padding: 0;
+		margin: -1px;
+		border: 0;
+
+		&:focus {
+			@extend %typography_small;
+			@include screen_reader( 'show' );
+			display: block;
+			padding: 1.25em 1.5em;
+			font-weight: 700;
+			text-decoration: none;
+			background: #36b;
+			color: #fff;
+			border-radius: 3px;
+			box-shadow: 0 0 2px 2px rgba( #000, .6 );
+			z-index: 100000; // Above WP toolbar.
+		}
+	}
+
+// Do not show the outline on the skip link target.
+
+	#content[tabindex="-1"]:focus {
+		outline: 0;
+	}

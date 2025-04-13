@@ -1,15 +1,16 @@
-<?php defined( 'ABSPATH' ) || exit;
+<?php
 /**
- * The header for our theme.
- *
- * @link  https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * The template for displaying site header.
  *
  * @package    Playground for Beaver Themer
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.0
+ * @version  1.1.0
  */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Located before opening `<html>` tag.
@@ -25,12 +26,17 @@ do_action( 'pfbt_html_before' );
 
 <html <?php language_attributes(); ?>>
 
+
 <head>
 <?php wp_head(); ?>
 </head>
 
+
 <body <?php body_class(); ?>>
+
 <?php
+
+wp_body_open();
 
 /**
  * Located just after opening `<body>` tag.

@@ -1,35 +1,45 @@
-.gallery {
-	$gutter: .382em;
+/*! wp/_gallery.scss */
 
+.gallery {
 	display: flex;
 	flex-wrap: wrap;
-	margin: $gutter / -2;
-
-	&:not(:last-child) {
-		margin-bottom: 1.618em;
-	}
+	gap: _var( spacing, gallery );
 
 	&-item {
-		flex: auto;
-		display: inline-block;
-		text-align: center;
-		vertical-align: top;
-
-		@for $i from 1 through 9 {
-			.gallery-columns-#{$i} & {
-				width: calc( #{ percentage( 1 / $i ) } - #{ $gutter } );
-				margin: $gutter / 2;
-			}
-		}
-
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: center;
+		max-width: 100%;
+		margin: 0;
 	}
 
 	&-caption {
-		display: block;
+		@extend %typography_small;
+		position: absolute;
+		flex-basis: 100%;
+		flex-grow: 1;
+		width: 100%;
+		max-height: 60%;
+		padding: 1em;
+		margin: 0;
+		inset-inline-start: 0;
+		inset-block-end: 0;
+		text-align: center;
+		background: linear-gradient(
+			0deg,
+			rgba( #000, .7 ),
+			rgba( #000, .3 ) 70%,
+			transparent
+		);
+		color: #fff;
+		overflow: auto;
 	}
 
-	img {
-		vertical-align: top;
+	@for $i from 2 through 9 {
+		&-columns-#{$i} .gallery-item {
+			width: calc( #{ percentage( math.div( 1, $i ) ) } - _var( spacing, gallery ) * #{ math.div( ( $i - 1 ), $i ) } );
+		}
 	}
-
 }

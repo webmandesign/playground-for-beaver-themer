@@ -1,6 +1,6 @@
 # Playground for Beaver Themer
 
-Blank, simple, no nonsense WordPress theme for building entire website with [**Beaver Themer** plugin](https://www.wpbeaverbuilder.com/beaver-themer/?fla=67). The theme is suitable for experienced users mostly, same as Beaver Themer.
+Blank, simple, no nonsense WordPress theme for building entire website with [**Beaver Themer** plugin](https://www.wpbeaverbuilder.com/beaver-themer/fla/67/). The theme is suitable for experienced users mostly, same as Beaver Themer.
 
 For more information and download please visit https://webmandesign.github.io/playground-for-beaver-themer/
 

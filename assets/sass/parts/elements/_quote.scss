@@ -1,0 +1,15 @@
+/*! elements/_quote.scss */
+
+blockquote {
+	padding: calc( 1em * _var( ratio, maj ) ) 0;
+	padding-inline-start: calc( 1em * _var( typography, ratio ) );
+	margin-inline: 0;
+	font-size: calc( 1em * _var( typography, ratio ) );
+	font-weight: 300;
+	font-style: italic;
+	border-left: _var( border, width ) solid;
+}
+
+cite {
+	font-style: italic;
+}

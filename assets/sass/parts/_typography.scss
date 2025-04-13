@@ -1,47 +1,46 @@
-html {
-	line-height: 1.618;
-	font-family:
-		-apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji',
-		'Segoe UI Symbol';
-}
+/*! _typography.scss */
 
-pre, code, kbd, tt, var {
-	font-family:
-		Monaco,
-		Consolas,
-		'Andale Mono',
-		'DejaVu Sans Mono',
-		monospace;
-	font-size: .9375rem;
-}
+// Headings.
 
-h1 {
-	font-size: 2.618em;
-}
+	%typography_heading {
+		--heading--font-size: 1;
+		font-size: calc( 1em * var(--heading--font-size) );
+		line-height: calc( 1 + .382 / var(--heading--font-size) );
+		word-wrap: break-word;
+	}
 
-h2 {
-	font-size: 2.058em;
-}
+	@for $i from 1 through 6 {
+		h#{ 7 - $i } {
+			@extend %typography_heading;
+			--heading--font-size: #{ pow(
+				_var( typography, ratio ),
+				#{ $i - 2 }
+			) };
+		}
+	}
 
-h1, h2 {
-	line-height: 1.191;
-}
+// Others.
 
-h3 {
-	font-size: 1.618em;
-}
+	%typography_small {
+		font-size: calc(
+			pow(
+				_var( typography, ratio ),
+				-1
+			)
+			* 1em
+		);
+	}
 
-h4 {
-	font-size: 1.272em;
-}
+	small {
+		@extend %typography_small;
+	}
 
-h3, h4 {
-	line-height: 1.382;
-}
+	strong,
+	b {
+		font-weight: 700;
+	}
+
+	em,
+	i {
+		font-style: italic;
+	}

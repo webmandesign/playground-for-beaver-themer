@@ -1,0 +1,12 @@
+/*! elements/_table.scss */
+
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: calc( 1em * _var( ratio, maj ) );
+	border-block-end-width: _var( border, width );
+	border-block-end-style: solid;
+}

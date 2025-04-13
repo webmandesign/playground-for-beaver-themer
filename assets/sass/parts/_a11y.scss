@@ -1,0 +1,24 @@
+/*! _a11y.scss */
+
+// Reduced motion.
+
+	@media (prefers-reduced-motion: reduce), (update: slow) {
+
+		:has( :target ) {
+			scroll-behavior: auto;
+		}
+
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0s !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0s !important;
+		}
+	}
+
+// Focus.
+
+	body:focus {
+		outline: none;
+	}

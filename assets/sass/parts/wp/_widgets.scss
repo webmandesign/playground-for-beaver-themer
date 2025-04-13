@@ -1,0 +1,26 @@
+/*! wp/_widgets.scss */
+
+.sidebar,
+.fl-module-sidebar {
+
+	.widget {
+
+		:root :where( & ) {
+			--spacing: #{ calc(
+				1em
+				* pow(
+					_var( ratio, base ),
+					2
+				)
+			) };
+		}
+	}
+}
+
+.widget {
+
+	&-title,
+	&title {
+		font-size: calc( 1em * _var( typography, ratio ) );
+	}
+}

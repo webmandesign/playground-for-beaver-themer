@@ -1,18 +1,15 @@
+/*! wp/_caption.scss */
+
 .wp-caption {
-	margin-bottom: 1.618em;
 	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: .618em 0;
-}
-
-.wp-caption-text {
 	text-align: center;
+
+	img[class*="wp-image-"] {
+		display: block;
+		margin-inline: auto;
+	}
+
+	.wp-caption-text {
+		margin: calc( 1em * _var( ratio, maj ) ) 0;
+	}
 }

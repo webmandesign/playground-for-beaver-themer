@@ -1,0 +1,85 @@
+/*! _vars.scss */
+
+$breakpoint: (
+	's'     :  448, // =  28em // Starting mobile landscape
+	'm'     :  672, // =  42em // Starting tablet portrait
+	'l'     :  880, // =  55em // Starting tablet landscape
+	'xl'    : 1280, // =  80em // Starting laptop
+	'xxl'   : 1600, // = 100em // Starting desktop
+	'xxxl'  : 1920, // = 120em // Starting desktop full HD
+	'xxxxl' : 2560, // = 160em // Starting desktop WQHD
+);
+
+// Creates `--pfbt--group--attribute: value;` CSS variables.
+$vars: (
+
+	// @example:
+	// group: (
+	// 	attribute: value,
+	// ),
+
+	// Ratio has priority, thus it's first.
+	ratio: (
+		base: 1.618,
+		maj: .618,
+		min: .382,
+	),
+
+	button: (
+		border-width: 2px,
+		padding: calc( 1em * _var( ratio, maj ) - _var( border, width ) ),
+		text-transform: uppercase,
+	),
+
+	border: (
+		opacity: 33%,
+		radius: 3px,
+		width: 1px,
+	),
+
+	font-family: (
+
+		global: (
+			system-ui,
+			sans-serif,
+		),
+
+		monospace: (
+			ui-monospace,
+			'"Cascadia Code"',
+			'"Source Code Pro"',
+			Menlo,
+			Consolas,
+			'"DejaVu Sans Mono"',
+			monospace,
+		),
+	),
+
+	line-height: (
+		global: _var( ratio, base ),
+	),
+
+	spacing: (
+		global: calc( 1rem * _var( ratio, base ) ),
+		heading: calc( 2 * _var( spacing, global ) ),
+		gallery: calc( 1em * _var( ratio, min ) ),
+	),
+
+	typography: (
+		ratio: 1.25, // https://www.modularscale.com/?1&em&1.25
+	),
+);
+
+:root {
+
+	@each $group, $value in $vars {
+		@if 'map' == meta.type-of( $value ) {
+			@each $attribute, $value in $value {
+				#{ _var_name( $group, $attribute ) }: #{ $value };
+			}
+		} @else {
+			$attribute: $group;
+			#{ _var_name( $group, $attribute ) }: #{ $value };
+		}
+	}
+}

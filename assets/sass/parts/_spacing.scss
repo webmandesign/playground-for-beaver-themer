@@ -1,28 +1,42 @@
-p,
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-hr,
-form,
-blockquote,
-table,
-figure,
-iframe {
+/*! _spacing.scss */
 
-	&:first-child {
-		margin-top: 0;
+// Block (element) margin.
+
+	%block_margin {
+
+		:root :where( & ) {
+			--spacing: #{ _var( spacing, global ) };
+			margin-block-start: var(--spacing);
+			margin-block-end: 0;
+		}
+
+		:root :where( &:first-child ) {
+			margin-block-start: 0;
+		}
 	}
 
-	&:last-child {
-		margin-bottom: 0;
+	h1, h2, h3, h4, h5, h6,
+	p,
+	ul, ol, dl,
+	hr,
+	form,
+	fieldset,
+	blockquote,
+	table,
+	figure,
+	iframe,
+	address,
+	details,
+	pre,
+	.gallery,
+	.sidebar .widget,
+	.fl-module-sidebar .widget {
+		@extend %block_margin;
 	}
 
-}
+	h1, h2, h3, h4, h5, h6 {
 
-ul, ol {
-	margin-#{$left}: 0;
-	padding-#{$left}: 1.618em;
-}
-
-.page-header {
-	margin-bottom: 1.618em;
-}
+		:root :where( & ) {
+			--spacing: #{ _var( spacing, heading ) };
+		}
+	}

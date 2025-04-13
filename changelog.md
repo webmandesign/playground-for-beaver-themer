@@ -1,33 +1,66 @@
 # Playground for Beaver Themer Changelog
 
+## 1.1.0, 20250412
+
+### Added
+- CSS variables
+
+### Updated
+- Improving code
+- Updating for current WordPress version (6.8)
+- Plugin affiliate link
+- Styles
+- Localization
+
+### File updates
+	changelog.md
+	footer.php
+	functions.php
+	header.php
+	index.php
+	screenshot.svg
+	screenshot.png
+	style.css
+	assets\sass\*.*
+	includes\class-customize.php
+	includes\class-setup-plugin.php
+	includes\class-setup.php
+	languages\*.*
+	templates\parts\admin\notice-welcome.php
+	templates\parts\content\content-beaver-themer.php
+	templates\parts\content\content-themer-layouts.php
+	templates\parts\content\content.php
+	templates\parts\header\head.php
+
+
 ## 1.0.2
 
-* **Update**: Improving content display
-* **Update**: Adding `utm_source` parameter to referral URL
+### Updated
+- Improving content display
+- Adding `utm_source` parameter to referral URL
 
-### Files changed:
-
-    changelog.md
-    index.php
-    style.css
-    includes/class-setup-plugin.php
+### File updates
+	changelog.md
+	index.php
+	style.css
+	includes/class-setup-plugin.php
 
 
 ## 1.0.1
 
-* **Fix**: CSS font family values
-* **Fix**: Making the theme work with Beaver Builder pages/posts
+### Fixed
+- CSS font family values
+- Making the theme work with Beaver Builder pages/posts
 
-### Files changed:
-
-    changelog.md
-    index.php
-    style.css
-    assets/css/base.css
-    assets/sass/base.scss
-    assets/sass/parts/_typography.scss
-    includes/class-setup-plugin.php
-    templates/parts/content/content.php
+### File updates
+	changelog.md
+	index.php
+	style.css
+	assets/css/base.css
+	assets/sass/base.scss
+	assets/sass/parts/_typography.scss
+	includes/class-setup-plugin.php
+	templates/parts/content/content.php
 
 
 ## 1.0.0

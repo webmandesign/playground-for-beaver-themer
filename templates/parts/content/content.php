@@ -1,17 +1,18 @@
-<?php defined( 'ABSPATH' ) || exit;
+<?php
 /**
  * Page builder content.
  *
  * @package    Playground for Beaver Themer
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since    1.0.1
- * @version  1.0.1
+ * @since    1.0.0
+ * @version  1.1.0
  */
 
-while ( have_posts() ) :
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+while ( have_posts() ) {
 	the_post();
-
 	the_content();
-
-endwhile;
+}

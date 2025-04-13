@@ -1,0 +1,111 @@
+// Functions:
+
+	// Returns CSS variable name only.
+	@function _var_name( $group: '', $attribute ) {
+		@if '' != $group {
+			$attribute: $group + '--' + $attribute;
+		}
+		@return --pfbt--#{ $attribute };
+	} // /_var_name
+
+	// Returns actual CSS variable.
+	@function _var( $group: '', $attribute, $default: null ) {
+		@if null == $default {
+			@return var( _var_name( $group, $attribute ) );
+		} @else {
+			@return var( _var_name( $group, $attribute ), $default );
+		}
+	} // /_var
+
+// Mixins:
+
+	// Universal Responsive media query.
+	@mixin media( $queries... ) {
+
+		$output : '';
+
+		@each $query in $queries {
+
+			@if (
+				$query
+				and (
+					list == type-of( $query )
+					or number == type-of( $query )
+				)
+			) {
+
+				// Default query rule (the 2nd value in list) if not set otherwise
+
+					@if ( 1 == length( $query ) ) {
+						$query : append( $query, 'min-width' );
+					}
+
+				// Query value (the 1st value in list) in ems, or display it unchanged
+
+					//
+					// Query value must be set as SASS number, which can actually also contain a unit.
+					// SASS string must be enclosed in parentheses, so never enclose the query value in those.
+					//
+					// @link  http://sass-lang.com/documentation/Sass/Script/Functions.html#unit-instance_method
+					//
+					$query_value : nth( $query, 1 );
+
+					@if (
+						number == type-of( $query_value )
+						and '' == unit( $query_value )
+					) {
+
+						// If the query is `max`, deduct a single pixel from unit-less query value.
+						// (We do not do this if the query value contains a unit!)
+						@if ( str-index( nth( $query, 2 ), 'max' ) ) {
+							$query_value : $query_value - 1;
+						}
+
+						$query_value : $query_value + px;
+
+						$query : set-nth( $query, 1, $query_value );
+					}
+
+				// Add to output
+
+					@if ( 0 < str-length( $output ) ) {
+						$output : $output + ' and ';
+					}
+					$output : $output + '(' + nth( $query, 2 ) + ': ' + nth( $query, 1 ) + ')';
+			}
+		}
+
+		@if ( 0 < str-length( $output ) ) {
+			@media #{ $output } {
+				@content
+			}
+
+		} @else {
+			@content
+
+		}
+	} // /media
+
+	// Screen reader hiding.
+	@mixin screen_reader( $action: 'hide' ) {
+
+		@if 'show' == $action {
+			clip: auto;
+			clip-path: none;
+			// Position can not be predicted here.
+			width: auto;
+			height: auto;
+			line-height: normal;
+
+		} @else {
+			clip: rect( 1px, 1px, 1px, 1px );
+			clip-path: inset( 50% );
+			position: absolute !important;
+			width: 1px;
+			height: 1px;
+			line-height: 1px;
+			overflow: hidden;
+			word-wrap: normal !important;
+
+		}
+	}

@@ -1,4 +1,4 @@
-<?php defined( 'ABSPATH' ) || exit;
+<?php
 /**
  * Beaver Themer inactive notice.
  *
@@ -6,65 +6,59 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.0
+ * @version  1.1.0
  */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 ?>
 
 <section class="notice-beaver-themer">
 
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Beaver Themer is required', 'playground-for-beaver-themer' ); ?></h1>
-	</header>
+	<h1><?php esc_html_e( 'Beaver Themer is required', 'playground-for-beaver-themer' ); ?></h1>
 
-	<div class="page-content">
-		<p>
-			<?php esc_html_e( 'It seems the Beaver Themer plugin is not activate on your website.', 'playground-for-beaver-themer' ); ?>
-			<?php esc_html_e( 'Please note that this theme requires Beaver Themer and Beaver Builder plugin to work properly so you can build your site layouts.', 'playground-for-beaver-themer' ); ?>
-		</p>
-		<p>
-			<?php esc_html_e( 'You can obtain these plugins following the links below:', 'playground-for-beaver-themer' ); ?>
-		</p>
+	<p>
+		<?php esc_html_e( 'It seems the Beaver Themer plugin is not activate on your website.', 'playground-for-beaver-themer' ); ?>
+		<?php esc_html_e( 'Please note that this theme requires Beaver Themer and Beaver Builder plugin to work properly so you can build your site layouts.', 'playground-for-beaver-themer' ); ?>
+	</p>
 
-		<ol>
-			<li>
-				<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/pricing/' ) ); ?>">
-					<?php
+	<p>
+		<?php esc_html_e( 'You can obtain these plugins following the links below:', 'playground-for-beaver-themer' ); ?>
+	</p>
 
-					printf(
-						/* Translators: %s: plugin name. */
-						esc_html__( 'Get %s plugin &rarr;', 'playground-for-beaver-themer' ),
-						'<strong>Beaver Builder</strong>'
-					);
+	<ol style="margin-top:.618em;">
+		<li>
+			<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/pricing/' ) ); ?>">
+				<?php
 
-					?>
-				</a>
-				<br>
-				<small><?php esc_html_e( 'Please purchase a premium version of the plugin as Beaver Themer plugin is not compatible with free, lite version of Beaver Builder.', 'playground-for-beaver-themer' ); ?></small>
-			</li>
-			<li>
-				<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/beaver-themer/' ) ); ?>">
-					<?php
+				printf(
+					/* Translators: %s: plugin name. */
+					esc_html__( 'Get %s plugin &rarr;', 'playground-for-beaver-themer' ),
+					'<strong>Beaver Builder</strong>'
+				);
 
-					printf(
-						/* Translators: %s: plugin name. */
-						esc_html__( 'Get %s plugin &rarr;', 'playground-for-beaver-themer' ),
-						'<strong>Beaver Themer</strong>'
-					);
+				?>
+			</a>
+			<small style="display:block;margin-top:.382em;line-height:1.382;"><?php esc_html_e( 'Please purchase a premium version of the plugin as Beaver Themer plugin is not compatible with free, lite version of Beaver Builder.', 'playground-for-beaver-themer' ); ?></small>
+		</li>
+		<li style="margin-top:.618em;">
+			<a href="<?php echo esc_url( PfBT_Setup_Plugin::url( 'https://www.wpbeaverbuilder.com/beaver-themer/' ) ); ?>">
+				<?php
 
-					?>
-				</a>
-			</li>
-		</ol>
-	</div>
+				printf(
+					/* Translators: %s: plugin name. */
+					esc_html__( 'Get %s plugin &rarr;', 'playground-for-beaver-themer' ),
+					'<strong>Beaver Themer</strong>'
+				);
+
+				?>
+			</a>
+		</li>
+	</ol>
 
 </section>
 
-<style>
-	.notice-beaver-themer {
-		max-width: 42em;
-		padding: 2.618em;
-		margin: 2.618em auto;
-		box-shadow: 0 .382em 2.618em rgba(0,0,0,.2);
-	}
-</style>
+<?php
+
+get_template_part( 'templates/parts/style/style', 'notice' );

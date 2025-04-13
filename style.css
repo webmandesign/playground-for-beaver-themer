@@ -1,33 +1,19 @@
 /*!
 Theme Name:   Playground for Beaver Themer
 Theme URI:    https://github.com/webmandesign/playground-for-beaver-themer/
-Author:       WebMan Design
+Author:       WebMan Design, Oliver Juhas
 Author URI:   https://www.webmandesign.eu/
-Version:      1.0.2
+Version:      1.1.0
 Text Domain:  playground-for-beaver-themer
 Domain Path:  /languages
-License:      GNU General Public License v3
-License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+License:      GPL-3.0-or-later
+License URI:  https://www.gnu.org/licenses/gpl-3.0-standalone.html
 Description:  Blank, simple, bare theme for using Beaver Themer plugin to built the whole website.
-Tags:         custom-logo, custom-menu, featured-images, rtl-language-support, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Tested up to:       6.8
+Requires at least:  6.0
+Requires PHP:       7.0
+
+GitHub Updater plugin compatibility (https://github.com/afragen/github-updater):
+GitHub Theme URI:  webmandesign/playground-for-beaver-themer
 */
-
-/**
- * GitHub Updater plugin compatibility.
- * @link  https://github.com/afragen/github-updater
- *
- * GitHub Theme URI: webmandesign/playground-for-beaver-themer
- */
-
-/**
- * IMPORTANT NOTICE:
- *
- * Do not place your custom CSS styles here in this file!
- * Use WordPress native "Additional CSS" field (https://codex.wordpress.org/CSS#Custom_CSS_in_WordPress),
- * or use a child theme (https://github.com/webmandesign/child-theme).
- *
- * If you place your custom CSS here, it will be lost once you update the theme!
- */

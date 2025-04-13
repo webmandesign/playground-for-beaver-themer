@@ -1,18 +1,32 @@
+/*! _reset.scss */
+
 html {
 	box-sizing: border-box;
-	border-color: rgba( #000, .2 );
+	font-family: _var( font-family, global );
+	line-height: _var( line-height, global );
+	border-color: color-mix( in srgb, currentColor _var( border, opacity ), transparent );
+	overflow-y: scroll;
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+		line-height: calc( .85 * _var( line-height, global ) );
+	}
+
+	@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
+		line-height: calc( .925 * _var( line-height, global ) );
+	}
 }
 
 * {
 	border-color: inherit;
 
 	&,
-	&:before,
-	&:after {
-		// Inherit box-sizing to make it easier to change the property
-		// for components that leverage other behavior.
-		// @link https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+	&::before,
+	&::after {
 		box-sizing: inherit;
 	}
+}
 
+:has( :target ) {
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
 }
