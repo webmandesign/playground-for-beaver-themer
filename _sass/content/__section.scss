@@ -3,6 +3,7 @@
 	padding: 2.618em 1em;
 	margin: 2.618em 0;
 	background: #eee;
+	color: #111;
 
 	&-inner {
 		max-width: 30em;
@@ -16,11 +17,6 @@
 	text-align: center;
 	background: #7d2d0f;
 	color: #fff;
-
-	a {
-		color: inherit;
-	}
-
 }
 
 .donation {
