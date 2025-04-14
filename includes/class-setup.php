@@ -59,6 +59,8 @@ class PfBT_Setup {
 
 			add_action( 'wp_enqueue_scripts', __CLASS__ . '::assets' );
 
+			add_action( 'init', __CLASS__ . '::editor_stylesheet', -10 );
+
 			add_action( 'pfbt_html_before', __CLASS__ . '::doctype' );
 
 			add_action( 'wp_head', __CLASS__ . '::head', 1 );
@@ -139,6 +141,9 @@ class PfBT_Setup {
 		add_theme_support( 'fl-theme-builder-headers' );
 		add_theme_support( 'fl-theme-builder-footers' );
 		add_theme_support( 'fl-theme-builder-parts' );
+
+		// Editor styles.
+		add_theme_support( 'editor-styles' );
 
 		// Navigational menus.
 		register_nav_menus();
@@ -255,6 +260,42 @@ class PfBT_Setup {
 			}
 
 	} // /assets
+
+	/**
+	 * Adding editor stylesheets.
+	 *
+	 * @since  1.1.0
+	 *
+	 * @return  void
+	 */
+	public static function editor_stylesheet() {
+
+		/**
+		 * Make sure the first editor stylesheet
+		 * is not set as WordPress automatically
+		 * adds `-rtl` suffix to it, which we
+		 * don't need in this theme.
+		 */
+		add_editor_style( '' );
+
+		$stylesheets = [
+			'normalize.css',
+			'base.css',
+		];
+
+		foreach ( $stylesheets as $key => $file ) {
+			$stylesheets[ $key ] = esc_url_raw(
+				add_query_arg(
+					'ver',
+					'v' . filemtime( get_theme_file_path( 'assets/css/' . $file ) ),
+					get_theme_file_uri( 'assets/css/' . $file )
+				)
+			);
+		}
+
+		add_editor_style( $stylesheets );
+
+	} // /editor_stylesheet
 
 	/**
 	 * HTML doctype.

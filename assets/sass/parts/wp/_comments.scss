@@ -96,6 +96,10 @@
 }
 
 .fl-module-fl-comments .navigation {
-	margin: calc( 2em * _var( ratio, base ) ) 0;
+	margin: calc( 1em * _var( ratio, base ) ) 0;
 	overflow: hidden;
+
+	&:has( div:nth-last-child(2):empty + div:empty ) {
+		display: none;
+	}
 }

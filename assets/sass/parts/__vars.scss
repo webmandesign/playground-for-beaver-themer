@@ -66,6 +66,11 @@ $vars: (
 		global: _var( ratio, base ),
 	),
 
+	size: (
+		content: var(--customize--content-size),
+		wide: var(--customize--wide-size),
+	),
+
 	spacing: (
 		global: calc( 1rem * _var( ratio, base ) ),
 		heading: calc( 2 * _var( spacing, global ) ),

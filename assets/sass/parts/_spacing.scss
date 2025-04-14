@@ -40,3 +40,10 @@
 			#{ _var_name( spacing ) }: #{ _var( spacing, heading ) };
 		}
 	}
+
+	// For blocks.
+	.fl-module-content > * {
+		// This is OK as if the page is built with Beaver Builder, the BB modules
+		// are displayed within `.fl-module-content > .fl-builder-content` container.
+		@extend %block_margin;
+	}

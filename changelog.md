@@ -22,6 +22,7 @@
 	screenshot.svg
 	screenshot.png
 	style.css
+	theme.json
 	assets\sass\*.*
 	includes\class-customize.php
 	includes\class-setup-plugin.php

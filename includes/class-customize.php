@@ -68,6 +68,8 @@ class PfBT_Customize {
 
 			add_action( 'wp_enqueue_scripts', __CLASS__ . '::styles', 20 );
 
+			add_action( 'enqueue_block_assets', __CLASS__ . '::styles_block_editor' );
+
 	} // /init
 
 	/**
@@ -208,21 +210,61 @@ class PfBT_Customize {
 	 */
 	public static function styles() {
 
-		wp_add_inline_style(
-			'pfbt-base',
-			':root {'
-			. '--customize--color--button-background: ' . get_theme_mod(
-				self::$id['option']['color_button_background'],
-				maybe_hash_hex_color( self::$default['color_button_background'] )
-			) . ';'
-			. '--customize--color--button-text: ' . get_theme_mod(
-				self::$id['option']['color_button_text'],
-				maybe_hash_hex_color( self::$default['color_button_text'] )
-			) . ';'
-			. '}'
-		);
+		wp_add_inline_style( 'pfbt-base', self::get_css() );
 
 	} // /styles
+
+	/**
+	 * Enqueue inline styles for block editor.
+	 *
+	 * @since  1.1.0
+	 *
+	 * @return  void
+	 */
+	public static function styles_block_editor() {
+
+		$handle = 'pfbt';
+
+		wp_register_style( $handle, '' );
+		wp_add_inline_style( $handle, self::get_css() );
+		wp_enqueue_style( $handle );
+
+	} // /styles_block_editor
+
+	/**
+	 * Inline CSS styles.
+	 *
+	 * @since  1.1.0
+	 *
+	 * @return  return
+	 */
+	public static function get_css() {
+
+		return ':root {'
+
+			. '--customize--content-size: ' . absint( get_theme_mod(
+				self::$id['option']['content_width'],
+				self::$default['content_width']
+			) ) . 'px;'
+
+			. '--customize--wide-size: ' . absint( 1.5 * (int) get_theme_mod(
+				self::$id['option']['content_width'],
+				self::$default['content_width']
+			) ) . 'px;'
+
+			. '--customize--color--button-background: ' . maybe_hash_hex_color( get_theme_mod(
+				self::$id['option']['color_button_background'],
+				self::$default['color_button_background']
+			) ) . ';'
+
+			. '--customize--color--button-text: ' . maybe_hash_hex_color( get_theme_mod(
+				self::$id['option']['color_button_text'],
+				self::$default['color_button_text']
+			) ) . ';'
+
+			. '}';
+
+	} // /get_css
 
 }
 

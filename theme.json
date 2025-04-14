@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+
+	"docBlock": {
+		"@since":   "1.1.0",
+		"@version": "1.1.0"
+	},
+
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "var(--pfbt--size--content)",
+			"wideSize": "var(--pfbt--size--wide)"
+		}
+	},
+
+	"styles": {
+		"spacing": {
+			"blockGap": "var(--pfbt--spacing)"
+		}
+	}
+}

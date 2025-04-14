@@ -19,7 +19,7 @@ button,
 [type="reset"],
 [type="submit"] {
 
-	:root :where( & ) {
+	:root :where( &:not( .components-button ) ) {
 		@extend %button;
 	}
 }
