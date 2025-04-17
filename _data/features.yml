@@ -1,29 +1,29 @@
 - title: Drag&nbsp;&&nbsp;drop layouts
-  content: _**Don't code it, Beaver Themer it!**_ With no overhead of a standard theme.
+  content: _**Don't code it, Beaver Themer it!**_ No unnecessary overhead.
   icon: layout
 
 - title: Website in no time
-  content: Create a beautiful flexible website you imagined fast and easy.
+  content: Create a flexible website you imagined fast & easily.
   icon: zap
 
 - title: International
-  content: Translation ready, compatible with <abbr title="Right to left">RTL</abbr> languages. ([How to translate?](https://support.webmandesign.eu/localization/?utm_source=pfbt-github))
+  content: Translation ready, compatible with <abbr title="Right to left">RTL</abbr> languages.
   icon: globe
 
 - title: Minimal styles
-  content: Functional, yet minimal CSS styles for more flexibility, extension and override.
+  content: Functional minimal CSS styles provide flexibility & extensibility.
   icon: feather
 
 - title: Lightweight
-  content: A very small theme package with minimal PHP and CSS code.
+  content: Very small theme package with minimal PHP and CSS code.
   icon: gift
 
 - title: Child theme ready
-  content: Modify or extend the theme to your needs via a [child theme](https://github.com/webmandesign/child-theme).
+  content: Modify or extend the theme with a [child theme](https://github.com/webmandesign/child-theme).
   icon: layers
 
 - title: Auto updates
-  content: Compatible with [GitHub Updater](https://github.com/afragen/github-updater) plugin for automatic theme updates.
+  content: Automatic theme updates with [GitHub Updater](https://github.com/afragen/github-updater) plugin.
   icon: arrow-up-circle
 
 - title: Free and open
@@ -31,5 +31,5 @@
   icon: book-open
 
 - title: Reliable author
-  content: Built by experienced reliable WordPress themes author, [WebMan Design](https://www.webmandesign.eu?utm_source=pfbt-github).
+  content: Built by experienced theme author [WebMan Design](https://www.webmandesign.eu?utm_source=pfbt-github).
   icon: smile
