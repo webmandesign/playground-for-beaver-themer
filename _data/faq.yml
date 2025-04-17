@@ -55,8 +55,7 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
 The theme also sets these CSS variables:
 
 
-```css
-:root {
+<pre>:root {
   --pfbt--ratio--base: 1.618;
   --pfbt--ratio--maj: 0.618;
   --pfbt--ratio--min: 0.382;
@@ -83,8 +82,7 @@ The theme also sets these CSS variables:
   --pfbt--typography--ratio: 1.25;
   --pfbt--spacing: var(--pfbt--spacing--global);
   --pfbt--heading--font-size: 1;
-}
-```"
+}</pre>"
 
 - q: What styles are NOT contained in the theme?
   a: "Basically, all styles mentioned in previous answer are very basic. In most cases they are sufficient enough, but in certain cases you might need to style your website elements to your needs using additional CSS code.
