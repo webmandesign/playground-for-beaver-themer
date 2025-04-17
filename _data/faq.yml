@@ -56,32 +56,59 @@ The theme also sets these CSS variables:
 
 
 <pre>:root {
+
   --pfbt--ratio--base: 1.618;
+
   --pfbt--ratio--maj: 0.618;
+
   --pfbt--ratio--min: 0.382;
+
   --pfbt--button--border-color: transparent;
+
   --pfbt--button--border-radius: 0.25em;
+
   --pfbt--button--border-width: 2px;
+
   --pfbt--button--font-size: 0.9em;
+
   --pfbt--button--font-weight: 600;
+
   --pfbt--button--padding: 1em 2em;
+
   --pfbt--button--text-transform: uppercase;
+
   --pfbt--button--background: var(--customize--color--button-background);
+
   --pfbt--button--color: var(--customize--color--button-text);
+
   --pfbt--border--opacity: 33%;
+
   --pfbt--border--radius: 3px;
+
   --pfbt--border--width: 1px;
+
   --pfbt--font-family--global: system-ui, sans-serif;
+
   --pfbt--font-family--monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
   --pfbt--line-height--global: var(--pfbt--ratio--base);
+
   --pfbt--size--content: var(--customize--content-size);
+
   --pfbt--size--wide: var(--customize--wide-size);
+
   --pfbt--spacing--global: calc(1rem * var(--pfbt--ratio--base));
+
   --pfbt--spacing--heading: calc(2 * var(--pfbt--spacing--global));
+
   --pfbt--spacing--gallery: calc(1em * var(--pfbt--ratio--min));
+
   --pfbt--typography--ratio: 1.25;
+
   --pfbt--spacing: var(--pfbt--spacing--global);
+
   --pfbt--heading--font-size: 1;
+
 }</pre>"
 
 - q: What styles are NOT contained in the theme?
