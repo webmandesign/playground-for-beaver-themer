@@ -55,7 +55,7 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
 The theme also sets these CSS variables:
 
 
-<pre style='overflow:auto;padding:1em;tab-size:2;background:rgba(0,0,0,.05);'>:root {
+<pre style='overflow:auto;padding:1em;font-size:14px;tab-size:2;background:rgba(0,0,0,.05);'>:root {
 
 
 \t--pfbt--ratio--base: 1.618;
