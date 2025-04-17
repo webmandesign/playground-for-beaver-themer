@@ -10,7 +10,7 @@
 
 Or, for automatic theme updates, you can install [GitHub Updater](https://github.com/afragen/github-updater) plugin which will take care of the theme updates for you."
 
-- q: What styles does the theme contain?
+- q: What styles does the theme provide?
   a: "Stylesheets are compiled from SASS partial files from within `assets/sass` folder. The theme enqueues 3 stylesheets:
 
 
