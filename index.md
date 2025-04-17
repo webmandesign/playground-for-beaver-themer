@@ -18,7 +18,7 @@ download_url: https://github.com/webmandesign/playground-for-beaver-themer/relea
 
 **Playground for Beaver Themer** is a simple WordPress theme and relies solely on using **Beaver Themer** (and **Beaver Builder**) plugin to create a whole website. The theme itself does not display any WordPress website content. Use the plugins to create all your layouts and views with easy to use drag & drop interface.
 
-Please make sure to install and activate [**Beaver Themer**](https://www.wpbeaverbuilder.com/beaver-themer/?fla=67&utm_source=pfbt-github) and [**Beaver Builder** (premium version)](https://www.wpbeaverbuilder.com/pricing/?fla=67&utm_source=pfbt-github) plugins before you use the theme. (For instructions on how to use these plugins, please refer to [kb.wpbeaverbuilder.com](https://kb.wpbeaverbuilder.com/?fla=67&utm_source=pfbt-github).)
+Please make sure to install and activate [**Beaver Themer**](https://www.wpbeaverbuilder.com/beaver-themer/fla/67/) and [**Beaver Builder** (premium version)](https://www.wpbeaverbuilder.com/pricing/fla/67/) plugins before you use the theme. (For instructions on how to use these plugins, please refer to [docs.wpbeaverbuilder.com](https://docs.wpbeaverbuilder.com/fla/67/).)
 
 **Playground for Beaver Themer** bare-bone WordPress theme is meant as a starter for experienced WordPress users who know their way around Beaver Themer plugin, and are not afraid of coding some additional CSS if needed. For technical information please check the Frequently Asked Questions section below.
 

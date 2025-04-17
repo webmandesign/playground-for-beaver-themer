@@ -1,8 +1,8 @@
 - q: Do I really need to use Beaver Themer plugin?
-  a: "Yes. The theme is basically useless without the Beaver Themer (and Beaver Builder) plugin. It was built specifically for use with these plugins. You can purchase both at [WPBeaverBuilder.com](https://www.wpbeaverbuilder.com/?fla=67&utm_source=pfbt-github)."
+  a: "Yes. The theme is basically useless without the Beaver Themer (and Beaver Builder) plugin. It was built specifically for use with these plugins. You can purchase both at [WPBeaverBuilder.com](https://www.wpbeaverbuilder.com/fla/67/)."
 
 - q: How to use Beaver Themer plugin?
-  a: "Please check the official [plugin knowledge base](https://kb.wpbeaverbuilder.com/collection/397-beaver-themer). Also, folks at WPBeginner released a comprehensive [tutorial article on how to use Beaver Themer](https://www.wpbeginner.com/wp-themes/how-to-easily-create-a-custom-wordpress-theme/) plugin."
+  a: "Please check the official [plugin knowledge base](https://docs.wpbeaverbuilder.com/beaver-themer/)."
 
 - q: How can I update the theme?
   a: "You can [download](#download) the newest version of the theme at this very page and overwrite the copy on your server via FTP then.
@@ -14,7 +14,7 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
   a: "Stylesheets are compiled from SASS partial files from within `assets/sass` folder. The theme enqueues 3 stylesheets:
 
 
-1. `assets/css/normalize.css` - Makes browsers [render all elements more consistently](https://necolas.github.io/normalize.css/) and in line with modern standards.<br>
+1. `assets/css/normalize.css` - Makes browsers [render all elements more consistently](https://necolas.github.io/normalize.css/) and in line with modern standards. The theme uses modified version of `normalize.css`.<br>
 
 2. `assets/css/base.css` - The <abbr title=\"Right to left\">RTL</abbr> languages ready stylesheet containing basic styles for:
 
@@ -26,11 +26,11 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
 
   - vertical spacing for most block elements,
 
-  - headings, blockquote, preformatted text and table elements,
+  - headings, blockquotes, code, preformatted text, lists, tables,
 
-  - form elements and buttons,
+  - form fields and buttons,
 
-  - required `.screen-reader-text` accessibility class,
+  - `.screen-reader-text` accessibility class,
 
   - default WordPress alignments (please note that optional `.alignwide` and `.alignfull` classes are not styled),
 
@@ -40,7 +40,7 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
 
   - gallery,
 
-  - images and other embed media,
+  - images and embed media,
 
   - logo,
 
@@ -49,10 +49,48 @@ Or, for automatic theme updates, you can install [GitHub Updater](https://github
   - widgets.
   <br>
 
-3. If a child theme is used, it also enqueues child theme's `style.css` file."
+3. If a child theme is used, it also enqueues child theme's `style.css` file.
+
+
+The theme also sets these CSS variables:
+
+
+```css
+:root {
+  --pfbt--ratio--base: 1.618;
+  --pfbt--ratio--maj: 0.618;
+  --pfbt--ratio--min: 0.382;
+  --pfbt--button--border-color: transparent;
+  --pfbt--button--border-radius: 0.25em;
+  --pfbt--button--border-width: 2px;
+  --pfbt--button--font-size: 0.9em;
+  --pfbt--button--font-weight: 600;
+  --pfbt--button--padding: 1em 2em;
+  --pfbt--button--text-transform: uppercase;
+  --pfbt--button--background: var(--customize--color--button-background);
+  --pfbt--button--color: var(--customize--color--button-text);
+  --pfbt--border--opacity: 33%;
+  --pfbt--border--radius: 3px;
+  --pfbt--border--width: 1px;
+  --pfbt--font-family--global: system-ui, sans-serif;
+  --pfbt--font-family--monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --pfbt--line-height--global: var(--pfbt--ratio--base);
+  --pfbt--size--content: var(--customize--content-size);
+  --pfbt--size--wide: var(--customize--wide-size);
+  --pfbt--spacing--global: calc(1rem * var(--pfbt--ratio--base));
+  --pfbt--spacing--heading: calc(2 * var(--pfbt--spacing--global));
+  --pfbt--spacing--gallery: calc(1em * var(--pfbt--ratio--min));
+  --pfbt--typography--ratio: 1.25;
+  --pfbt--spacing: var(--pfbt--spacing--global);
+  --pfbt--heading--font-size: 1;
+}
+```"
 
 - q: What styles are NOT contained in the theme?
-  a: "Basically, all styles mentioned in previous answer are very basic. In most cases they are sufficient enough, but in certain cases you might need to style your website elements to your needs using additional CSS code. For example, you could wish to style comments to your needs, or form elements, or link colors and behavior, or global website typography.
+  a: "Basically, all styles mentioned in previous answer are very basic. In most cases they are sufficient enough, but in certain cases you might need to style your website elements to your needs using additional CSS code.
+
+
+For example, you could style buttons, comments to your needs, or form elements, or link colors and behavior, or global website typography.
 
 
 Please feel free to put your custom CSS code into **Appearance &rarr; Customize &rarr; Additional CSS**, or into your child theme's `style.css` file."
@@ -64,10 +102,10 @@ Please feel free to put your custom CSS code into **Appearance &rarr; Customize 
 Other than that you could use your child theme to load your custom font files into your website and use a custom CSS code to apply it on your website elements."
 
 - q: How to use navigational menus?
-  a: "The theme allows you to [create any number of menus](https://codex.wordpress.org/WordPress_Menu_User_Guide). However, it does not display any of them on front-end of your website. Please use Beaver Builder's [Menu module](https://kb.wpbeaverbuilder.com/article/65-menu-module-overview) to display your menus wherever needed."
+  a: "The theme allows you to [create any number of menus](https://codex.wordpress.org/WordPress_Menu_User_Guide). However, it does not display any of them on front-end of your website. Please use Beaver Builder's [Menu module](https://docs.wpbeaverbuilder.com/beaver-builder/2.8/layouts/modules/menu/) to display your menus wherever needed."
 
 - q: How to use sidebars (widgetized areas)?
-  a: "Theme registers a single [widgetized area called 'Sidebar'](https://codex.wordpress.org/WordPress_Widgets). However, this sidebar is not displayed on the front-end of your website by the theme. Please use Beaver Builder's [Sidebar module](https://kb.wpbeaverbuilder.com/article/71-sidebar-module-overview) to display it wherever needed.
+  a: "Theme registers a single [widgetized area called 'Sidebar'](https://wordpress.org/documentation/article/manage-wordpress-widgets/). However, this sidebar is not displayed on the front-end of your website by the theme. Please use Beaver Builder's [Sidebar module](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/sidebar/) to display it wherever needed.
 
 
 Surely, you can use a [sidebar management plugin](https://wordpress.org/plugins/search/sidebars/) to create other widgetized areas if needed."
