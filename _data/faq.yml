@@ -58,70 +58,63 @@ The theme also sets these CSS variables:
 <pre style='overflow:auto'>:root {
 
 
-	--pfbt--ratio--base: 1.618;
+\t--pfbt--ratio--base: 1.618;
 
-	--pfbt--ratio--maj: 0.618;
+\t--pfbt--ratio--maj: 0.618;
 
-	--pfbt--ratio--min: 0.382;
-
-
-
-	--pfbt--button--border-color: transparent;
-
-	--pfbt--button--border-radius: 0.25em;
-
-	--pfbt--button--border-width: 2px;
-
-	--pfbt--button--font-size: 0.9em;
-
-	--pfbt--button--font-weight: 600;
-
-	--pfbt--button--padding: 1em 2em;
-
-	--pfbt--button--text-transform: uppercase;
-
-	--pfbt--button--background: var(--customize--color--button-background);
-
-	--pfbt--button--color: var(--customize--color--button-text);
+\t--pfbt--ratio--min: 0.382;
 
 
+\t--pfbt--button--border-color: transparent;
 
-	--pfbt--border--opacity: 33%;
+\t--pfbt--button--border-radius: 0.25em;
 
-	--pfbt--border--radius: 3px;
+\t--pfbt--button--border-width: 2px;
 
-	--pfbt--border--width: 1px;
+\t--pfbt--button--font-size: 0.9em;
 
+\t--pfbt--button--font-weight: 600;
 
+\t--pfbt--button--padding: 1em 2em;
 
-	--pfbt--font-family--global: system-ui, sans-serif;
+\t--pfbt--button--text-transform: uppercase;
 
-	--pfbt--font-family--monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-	monospace;
+\t--pfbt--button--background: var(--customize--color--button-background);
 
-
-
-	--pfbt--line-height--global: var(--pfbt--ratio--base);
-
-
-
-	--pfbt--size--content: var(--customize--content-size);
-
-	--pfbt--size--wide: var(--customize--wide-size);
+\t--pfbt--button--color: var(--customize--color--button-text);
 
 
+\t--pfbt--border--opacity: 33%;
 
-	--pfbt--spacing--global: calc(1rem * var(--pfbt--ratio--base));
+\t--pfbt--border--radius: 3px;
 
-	--pfbt--spacing--heading: calc(2 * var(--pfbt--spacing--global));
-
-	--pfbt--spacing--gallery: calc(1em * var(--pfbt--ratio--min));
-
-	--pfbt--spacing: var(--pfbt--spacing--global);
+\t--pfbt--border--width: 1px;
 
 
+\t--pfbt--font-family--global: system-ui, sans-serif;
 
-	--pfbt--typography--ratio: 1.25;
+\t--pfbt--font-family--monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+\tmonospace;
+
+
+\t--pfbt--line-height--global: var(--pfbt--ratio--base);
+
+
+\t--pfbt--size--content: var(--customize--content-size);
+
+\t--pfbt--size--wide: var(--customize--wide-size);
+
+
+\t--pfbt--spacing--global: calc(1rem * var(--pfbt--ratio--base));
+
+\t--pfbt--spacing--heading: calc(2 * var(--pfbt--spacing--global));
+
+\t--pfbt--spacing--gallery: calc(1em * var(--pfbt--ratio--min));
+
+\t--pfbt--spacing: var(--pfbt--spacing--global);
+
+
+\t--pfbt--typography--ratio: 1.25;
 
 }</pre>"
 
